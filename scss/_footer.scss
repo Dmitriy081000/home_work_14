@@ -4,7 +4,6 @@
     background: rgba(18, 11, 11, 0.51);
     padding: 3% 0 2%;
     z-index: 3;
-    position: fixed;
     width: 100%;
     left: 0;
     bottom: 0;
@@ -25,7 +24,6 @@
         padding-left: 0;
         margin-bottom: 0;
         display: flex;
-        justify-content: space-around;
         @include media-bp-up(md) {
           column-gap: 20px;
           width: 100%;

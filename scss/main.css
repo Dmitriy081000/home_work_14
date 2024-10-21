@@ -101,7 +101,6 @@
   background: rgba(18, 11, 11, 0.51);
   padding: 3% 0 2%;
   z-index: 3;
-  position: fixed;
   width: 100%;
   left: 0;
   bottom: 0;
@@ -120,7 +119,6 @@
   padding-left: 0;
   margin-bottom: 0;
   display: flex;
-  justify-content: space-around;
 }
 @media (min-width: 768px) {
   .footer__nav {
@@ -160,4 +158,68 @@
 .footer__link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.container__item > .row {
+  --bs-gutter-x: 0rem;
+}
+
+.thiland {
+  width: 100%;
+  padding-bottom: 5%;
+}
+.thiland .row {
+  --bs-gutter-x: 0;
+}
+.thiland__header {
+  width: 100%;
+  padding-bottom: 5%;
+}
+.thiland__popular {
+  width: 90%;
+  padding: 0 3% 5%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.thiland__btn {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: #212529;
+  border-color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-padding-y: 0.175rem;
+}
+.thiland__btn:hover {
+  background-color: #212529;
+  color: white;
+  border-color: black;
+}
+.thiland__hotel {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 5%;
+  margin: 0 auto;
+  --bs-gutter-x: 0rem;
+}
+.thiland__hotel p {
+  font-size: 12px;
+}
+.thiland__card {
+  margin-bottom: 5%;
+  width: 44%;
+}
+.thiland__card--md {
+  display: none;
+}
+
+.container__trevel {
+  width: 100%;
+}
+.container__trevel img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
