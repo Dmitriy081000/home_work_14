@@ -26,6 +26,7 @@
 @media (min-width: 768px) {
   .header__navList {
     display: flex;
+    flex-direction: row;
     column-gap: 20px;
   }
 }
@@ -53,6 +54,10 @@
   line-height: normal;
   text-decoration: none;
   align-self: center;
+  transition: all 0.3s;
+}
+.header__link:hover {
+  color: #000;
 }
 .header__btn {
   display: flex;
@@ -68,20 +73,20 @@
   position: relative;
   display: inline-block;
   transition: all 0.3s;
-  width: 10px;
-  height: 1px;
+  width: 16px;
+  height: 2px;
   background-color: #fff;
 }
 .header__btn.active .header__btn-line:first-child {
   transform: rotate(45deg);
-  top: 3px;
+  top: 4px;
 }
 .header__btn.active .header__btn-line:nth-child(2) {
   background-color: transparent;
 }
 .header__btn.active .header__btn-line:nth-child(3) {
   transform: rotate(-45deg);
-  bottom: 3px;
+  bottom: 4px;
 }
 
 .header.hide {
