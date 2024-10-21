@@ -5,29 +5,4 @@
   box-sizing: border-box;
 }
 
-.wrapper {
-  width: 100%;
-}
-
-.header {
-  width: 100%;
-}
-
-.row {
-  z-index: 2;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 7%;
-  min-width: 100%;
-  background-color: rgba(0, 0, 0, 0.708);
-}
-
-.navigation__ul {
-  display: flex;
-  justify-content: space-around;
-}
-
-.text {
-  width: 70%;
-}/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
