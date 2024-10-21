@@ -19,7 +19,7 @@
     }
     &__popular {
         width: 90%;
-        padding: 0 3% 5%;
+        padding-bottom: 5%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -44,7 +44,7 @@
         width: 90%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         padding-bottom: 5%;
         margin: 0 auto;
         --bs-gutter-x: 0rem;
@@ -54,16 +54,64 @@
     }
     &__card {
         margin-bottom: 5%;
-        width: 44%;
+        width: 47%;
+        box-shadow: 3px -3px 8px rgba(0, 0, 0, 0.338);
         &--md {
             display: none;
         }
+    }
+
+    &__info--block {
+        width: 90%;
+        margin: 0 auto 5%; 
+    }
+
+    &__info--box {
+        display: flex;
+    }
+}
+
+.card-body {
+    position: relative;
+    top: 0;
+    left: 0;
+    & .thiland__btn {
+        position: absolute;
+        bottom: -10px;
+        right: 10px;
     }
 }
 
 .container__trevel {
     width: 100%;
+    padding-bottom: 5%;
     & img {
         width: 100%;
+    }
+}
+
+.box {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.container__regist {
+    // width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    & .regist__info {
+        position: absolute;
+        top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(255, 255, 255, 0.80);
+        & p {
+            width: 82%;
+            font-size: 10px;
+        }
     }
 }
