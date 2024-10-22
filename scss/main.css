@@ -175,12 +175,23 @@
   width: 100%;
   padding-bottom: 5%;
 }
+@media (min-width: 992px) {
+  .thiland__header {
+    height: 100vh;
+    padding: 0;
+  }
+}
 .thiland__popular {
   width: 90%;
   padding-bottom: 5%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+@media (min-width: 992px) {
+  .thiland__popular {
+    padding-top: 5%;
+  }
 }
 .thiland__btn {
   color: rgba(255, 255, 255, 0.8);
@@ -217,12 +228,30 @@
 .thiland__card--md {
   display: none;
 }
+@media (min-width: 768px) {
+  .thiland__card {
+    width: 30%;
+  }
+  .thiland__card--md {
+    display: flex;
+  }
+}
 .thiland__info--block {
   width: 90%;
   margin: 0 auto 5%;
 }
+@media (min-width: 992px) {
+  .thiland__info--block {
+    width: 47%;
+  }
+}
 .thiland__info--box {
-  display: flex;
+  width: 47%;
+}
+@media (min-width: 992px) {
+  .thiland__info--box {
+    width: 100%;
+  }
 }
 
 .card-body {
@@ -244,17 +273,38 @@
   width: 100%;
 }
 
-.box {
-  width: 90%;
+.box--minor {
   display: flex;
-  justify-content: space-between;
+  width: 90%;
   margin: 0 auto;
+  justify-content: space-between;
+}
+@media (min-width: 992px) {
+  .box--minor {
+    width: 43%;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  .box {
+    width: 90%;
+    flex-direction: row;
+  }
 }
 
 .container__regist {
   position: relative;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
 }
 .container__regist .regist__info {
   position: absolute;
@@ -264,7 +314,49 @@
   align-items: center;
   color: rgba(255, 255, 255, 0.8);
 }
+@media (min-width: 768px) {
+  .container__regist .regist__info {
+    margin: 5% 0;
+  }
+}
 .container__regist .regist__info p {
   width: 82%;
   font-size: 10px;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .container__regist .regist__info p {
+    font-size: 13px;
+  }
+}
+
+.tour-filter {
+  border-radius: 72px;
+  border: 1px solid #cbcaca;
+  background: #fff;
+  width: 90%;
+  margin-top: 1%;
+}
+.tour-filter__form {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.tour-filter__input {
+  border: none;
+  font-size: 12px;
+  color: #9B9B9B;
+  font-weight: 600;
+  border-radius: 30px;
+  width: 70%;
+}
+@media (min-width: 768px) {
+  .tour-filter__input {
+    margin-top: 0;
+    line-height: 36px;
+    font-size: 18px;
+    padding: 0 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

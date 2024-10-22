@@ -169,30 +169,32 @@
             <div class="row align-items-center">
                 <div class="col-12">
                     <div class="box">
-                        <div class="card thiland__card thiland__info--box">
-                            <div class="card-body">
-                                <p class="card-text">120$ | день</p>
-                                <h6 class="card-title">Oстрови Ко Тао і Нанг Юань</h6>
-                                <p class="card-text">Важко собі уявити відпочинок на Самуї без відвідування островів Ко Тао і Нанг Юань, які входять в десятку найкрасивіших островів світу!</p>
-                                <a href="#" class="btn btn-primary thiland__btn">Детальніше</a>
+                        <div class="box--minor">
+                            <div class="card thiland__card thiland__info--box">
+                                <div class="card-body">
+                                    <p class="card-text">120$ | день</p>
+                                    <h6 class="card-title">Oстрови Ко Тао і Нанг Юань</h6>
+                                    <p class="card-text">Важко собі уявити відпочинок на Самуї без відвідування островів Ко Тао і Нанг Юань, які входять в десятку найкрасивіших островів світу!</p>
+                                    <a href="#" class="btn btn-primary thiland__btn">Детальніше</a>
+                                </div>
+                            </div>
+                            <div class="card thiland__card thiland__info--box">
+                                <div class="card-body">
+                                    <p class="card-text">200$ | день</p>
+                                    <h6 class="card-title">CRU Champagne Bar</h6>
+                                    <p class="card-text">Пропонуючи Каспійську ікру, різноманітні коктейлі, CRU розважає завдяки ді-джея та панорамних місць із надзвичайним видом для кожного гостя.</p>
+                                    <a href="#" class="btn btn-primary thiland__btn">Детальніше</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="card thiland__card thiland__info--box">
+                        <div class="card thiland__card thiland__info--block">
+                            <img src="img_page/palace.jpg" class="card-img-top" alt="Grande Centre Point Pattaya">
                             <div class="card-body">
-                                <p class="card-text">200$ | день</p>
-                                <h6 class="card-title">CRU Champagne Bar</h6>
-                                <p class="card-text">Пропонуючи Каспійську ікру, різноманітні коктейлі, CRU розважає завдяки ді-джея та панорамних місць із надзвичайним видом для кожного гостя.</p>
+                                <p class="card-text">80$ | доба</p>
+                                <h6 class="card-title">Храм Пхукет ФантаСи</h6>
+                                <p class="card-text">Храм виконаний в нетрадиційній буддійській манері, відрізняється тим, що його убранство виконано переважно матеріалами білого кольору.</p>
                                 <a href="#" class="btn btn-primary thiland__btn">Детальніше</a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="card thiland__card thiland__info--block">
-                        <img src="img_page/palace.jpg" class="card-img-top" alt="Grande Centre Point Pattaya">
-                        <div class="card-body">
-                            <p class="card-text">80$ | доба</p>
-                            <h6 class="card-title">Храм Пхукет ФантаСи</h6>
-                            <p class="card-text">Храм виконаний в нетрадиційній буддійській манері, відрізняється тим, що його убранство виконано переважно матеріалами білого кольору.</p>
-                            <a href="#" class="btn btn-primary thiland__btn">Детальніше</a>
                         </div>
                     </div>
                 </div>
@@ -203,10 +205,15 @@
             <div class="regist__info">
                 <h6>Підпишіться для спеціальної ціни</h6>
                 <p>Не хочеш щось пропустити? підпишіться прямо зараз і отримуйте спеціальну акцію та щомісячну розсилку</p>
+                <div class="tour-filter">
+                    <form class="tour-filter__form" action method="get">
+                        <input class="tour-filter__input" type="email" name="email" id="tourDate">
+                        <button class="btn btn-primary thiland__btn" type="submit">Ввести email</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-        
 <footer class="footer">
     <div class="container">
         <div class="row row__footer">
@@ -249,7 +256,6 @@
         </div>
     </div>
 </footer>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
