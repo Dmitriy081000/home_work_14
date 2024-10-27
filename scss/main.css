@@ -164,24 +164,24 @@
   --bs-gutter-x: 0rem;
 }
 
-.thiland {
+.country {
   width: 100%;
   padding-bottom: 5%;
 }
-.thiland .row {
+.country .row {
   --bs-gutter-x: 0;
 }
-.thiland__header {
+.country__header {
   width: 100%;
   padding-bottom: 5%;
 }
 @media (min-width: 992px) {
-  .thiland__header {
+  .country__header {
     height: 100vh;
     padding: 0;
   }
 }
-.thiland__popular {
+.country__popular {
   width: 90%;
   padding-bottom: 5%;
   margin: 0 auto;
@@ -189,11 +189,11 @@
   justify-content: space-between;
 }
 @media (min-width: 992px) {
-  .thiland__popular {
+  .country__popular {
     padding-top: 5%;
   }
 }
-.thiland__btn {
+.country__btn {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: #212529;
@@ -203,12 +203,12 @@
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-padding-y: 0.175rem;
 }
-.thiland__btn:hover {
+.country__btn:hover {
   background-color: #212529;
   color: white;
   border-color: black;
 }
-.thiland__hotel {
+.country__hotel {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
@@ -217,39 +217,39 @@
   margin: 0 auto;
   --bs-gutter-x: 0rem;
 }
-.thiland__hotel p {
+.country__hotel p {
   font-size: 12px;
 }
-.thiland__card {
+.country__card {
   margin-bottom: 5%;
   width: 47%;
   box-shadow: 3px -3px 8px rgba(0, 0, 0, 0.338);
 }
-.thiland__card--md {
+.country__card--md {
   display: none;
 }
 @media (min-width: 768px) {
-  .thiland__card {
+  .country__card {
     width: 30%;
   }
-  .thiland__card--md {
+  .country__card--md {
     display: flex;
   }
 }
-.thiland__info--block {
+.country__info--block {
   width: 90%;
   margin: 0 auto 5%;
 }
 @media (min-width: 992px) {
-  .thiland__info--block {
+  .country__info--block {
     width: 47%;
   }
 }
-.thiland__info--box {
+.country__info--box {
   width: 47%;
 }
 @media (min-width: 992px) {
-  .thiland__info--box {
+  .country__info--box {
     width: 100%;
   }
 }
@@ -259,7 +259,7 @@
   top: 0;
   left: 0;
 }
-.card-body .thiland__btn {
+.card-body .country__btn {
   position: absolute;
   bottom: -10px;
   right: 10px;
