@@ -1,15 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-    //outline: 1px solid red;
-}
-
-@import 'mixin';
-@import 'variables';
-@import "elements";
-@import "header";
-@import "hero";
-@import "products";
+@use "base/base";
+@import 'utils/utils';
+@import "components/components";
+@import "layout/header";
+@import "pages/main/index";
 

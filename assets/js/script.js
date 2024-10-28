@@ -65,6 +65,9 @@ document.addEventListener('DOMContentLoaded', function () {
     loop: true,
     centeredSlides: true,
     breakpoints: {
+      576:{
+        slidesPerView: 2
+      },
       768: {
         slidesPerView: 3
       }
