@@ -1,46 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-          integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="scss/main.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="scss/main.css">
+  <title>Document</title>
 </head>
 <body>
 <header class="header">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-7 col-md-3">
-                <a>
-                    <img class="header__logo" src="assets/imgs/headerLogo.svg" alt="logo">
-                </a>
-            </div>
-            <div class="col-3 d-md-flex justify-content-md-center">
-                <a href="#" class="header__link">Home</a>
-            </div>
-                <button class="header__btn d-md-none">
-                    <span class="header__btn-line"></span>
-                    <span class="header__btn-line"></span>
-                    <span class="header__btn-line"></span>
-                </button>
-            <div class="col-12 col-md-6">
-                <nav class="header__nav">
-                    <ul class="header__navList justify-content-md-end">
-                        <li><a href="" class="header__link">Package</a></li>
-                        <li><a href="" class="header__link">Destination</a></li>
-                        <li><a href="" class="header__link">Blog</a></li>
-                        <li><a href="" class="header__link">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-7 col-md-3">
+        <a>
+          <img class="header__logo" src="assets/imgs/headerLogo.svg" alt="logo">
+        </a>
+      </div>
+      <div class="col-3 d-md-flex justify-content-md-center">
+        <a href="#" class="header__link">Home</a>
+      </div>
+      <button class="header__btn d-md-none">
+        <span class="header__btn-line"></span>
+        <span class="header__btn-line"></span>
+        <span class="header__btn-line"></span>
+      </button>
+      <div class="col-12 col-md-6">
+        <nav class="header__nav">
+          <ul class="header__navList justify-content-md-end">
+            <li><a href="" class="header__link">Package</a></li>
+            <li><a href="" class="header__link">Destination</a></li>
+            <li><a href="" class="header__link">Blog</a></li>
+            <li><a href="" class="header__link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col col-lg-6">
+        <div class="parallax-item">
+          <h1 class="main-title">Make in
+            your journey.</h1>
+          <p class="subtitle">Explore the world with what you love beautiful natural beauty.</p>
+          <div class="tour-filter">
+            <form class="tour-filter__form" action="" method="post">
+              <select class="tour-filter__input">
+                <option selected disabled>Location</option>
+                <option>Ukraine</option>
+                <option>Egypt</option>
+                <option>USA</option>
+              </select>
+              <input class="tour-filter__input" type="date" name="tourDate" id="tourDate">
+              <select class="tour-filter__input" name="tourPeople" id="tourPeople">
+                <option selected disabled>People</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 or more</option>
+              </select>
+              <button class="tour-filter__submit" type="submit">Explore now</button>
+            </form>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="products">
+  <div class="container">
+    <div class="row">
+      <h2 class="secondary-title">Explore new worlds with exotic natural scenery</h2>
+      <p class="subtitle">Explore the world with what you love beautiful natural beauty.</p>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="swiper products__slider">
+          <div class="products__slider-nav">
+            <div class="products__slider-prev">
+              <i class='bx bx-chevron-left'></i>
+            </div>
+            <div class="products__slider-next">
+              <i class='bx bx-chevron-right' ></i>
+            </div>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide products__slide">
+              <a href="#" class="products__slide-link">
+                <img class="products__slide-image" src="assets/imgs/country1.jpg" alt="">
+              </a>
+              <div class="products__slide-text">
+                <p class="products__slide-title">Bali, Indonesia.</p>
+                <p class="products__slide-descr">Bali is a beautiful tourist spot and is visited by many travelers.</p>
+              </div>
+            </div>
+            <div class="swiper-slide products__slide">
+              <a href="#" class="products__slide-link">
+                <img class="products__slide-image" src="assets/imgs/country2.jpg" alt="">
+              </a>
+              <div class="products__slide-text">
+                <p class="products__slide-title">Bali, Indonesia.</p>
+                <p class="products__slide-descr">Bali is a beautiful tourist spot and is visited by many travelers.</p>
+              </div>
+            </div>
+            <div class="swiper-slide products__slide">
+              <a href="#" class="products__slide-link">
+                <img class="products__slide-image" src="assets/imgs/country3.jpg" alt="">
+              </a>
+              <div class="products__slide-text">
+                <p class="products__slide-title">Bali, Indonesia.</p>
+                <p class="products__slide-descr">Bali is a beautiful tourist spot and is visited by many travelers.</p>
+              </div>
+            </div>
+            <div class="swiper-slide products__slide">
+              <a href="#" class="products__slide-link">
+                <img class="products__slide-image" src="assets/imgs/country2.jpg" alt="">
+              </a>
+              <div class="products__slide-text">
+                <p class="products__slide-title">Bali, Indonesia.</p>
+                <p class="products__slide-descr">Bali is a beautiful tourist spot and is visited by many travelers.</p>
+              </div>
+            </div>
+          </div>
+          <div class="products__slider-pagination"></div>
+        </div>
+<<<<<<< HEAD
     </div>  
 </header>
     
@@ -87,10 +184,53 @@
         </div>
     </div>
 </footer>
+=======
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container">
+    <div class="row">
+      <h2 class="secondary-title secondary-title--light">Why choose Us?</h2>
+      <p class="subtitle">our services have been trusted by world travelers.</p>
+      <div class="about__cards">
+        <div class="about__card">
+          <span class="about__card-icon">
+            <i class='bx bxs-universal-access' style="color:#fff"></i>
+          </span>
+          <h4 class="about__card-title">Best Service</h4>
+          <p class="about__card-text">our service is reliable and convenient, our service is quality.</p>
+          <a href="#" class="about__card-link">Learn more <i class='bx bxs-right-arrow-alt'></i></a>
+        </div>
+        <div class="about__card">
+          <span class="about__card-icon">
+            <i class='bx bx-money-withdraw' style="color:#fff"></i>
+          </span>
+          <h4 class="about__card-title">Price Guarantee</h4>
+          <p class="about__card-text">our service is reliable and convenient, our service is quality.</p>
+          <a href="#" class="about__card-link">Learn more <i class='bx bxs-right-arrow-alt'></i></a>
+        </div>
+        <div class="about__card">
+          <span class="about__card-icon">
+            <i class='bx bxs-party' style="color:#fff"></i>
+          </span>
+          <h4 class="about__card-title">Handpicked Hotels</h4>
+          <p class="about__card-text">our service is reliable and convenient, our service is quality.</p>
+          <a href="#" class="about__card-link">Learn more <i class='bx bxs-right-arrow-alt'></i></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+>>>>>>> master
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>

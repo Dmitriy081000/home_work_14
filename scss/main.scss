@@ -1,18 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-    //outline: 1px solid red;
-}
-
-// body {
-//     width: 100%;
-//     height: 100%;
-// }
-
-@import 'mixin';
-@import 'variables';
-@import "header";
-@import 'footer';
-@import 'country'
+@use "base/base";
+@import 'utils/utils';
+@import "components/components";
+@import "layout/header";
+@import "pages/main/index";

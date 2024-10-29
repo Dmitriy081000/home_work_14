@@ -1,0 +1,60 @@
+@use '../../utils/mixin' as *;
+
+.hero {
+  background: url('../assets/imgs/heroBg.jpg') no-repeat;
+  background-size: cover;
+  padding: 254px 0 114px;
+  min-height: 100vh;
+}
+
+.tour-filter {
+  border-radius: 72px;
+  border: 1px solid #cbcaca;
+  background: #fff;
+  box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.30);
+  margin-top: 30px;
+
+  &__form {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__input {
+    border: none;
+    font-size: 0.75rem;
+    color: #9B9B9B;
+    font-weight: 600;
+    @include media-bp-up(lg) {
+      font-size: 1.125rem;
+      line-height: 36px;
+    }
+  }
+
+  &__submit {
+    color: #fff;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    background-color: #000;
+    line-height: 18px;
+    border-radius: 28px;
+    padding: 6px 12px;
+    justify-self: center;
+    margin-top: 20px;
+    transition: color .3s;
+
+    &:hover {
+      color: #cbcaca;
+    }
+
+    @include media-bp-up(md) {
+      margin-top: 0;
+      line-height: 36px;
+      font-size: 1.125rem;
+      padding: 12px 24px;
+    }
+  }
+}

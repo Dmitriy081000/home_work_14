@@ -1,5 +1,6 @@
 @use 'variables' as vars;
 
+// custom breakpoints mixin
 @mixin media-bp-up($size) {
 	$screen: map-get(vars.$grid-breakpoints, $size);
 	@if $screen != null {
@@ -7,7 +8,7 @@
 			@content;
 		}
 	} @else {
-		@warn "Нет брейкпоинта #{$size} в bp.$grid-breakpoints!";
+		@warn "Нет брейкпоинта #{$size} в $grid-breakpoints!";
 	}
 }
 
