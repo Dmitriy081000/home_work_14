@@ -31,13 +31,10 @@
 
     &__popular {
         width: 90%;
-        padding-bottom: 5%;
+        padding: 5% 0;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        @include media-bp-up(lg) {
-            padding-top: 5%;
-        }
     }
 
     &__btn {
@@ -62,7 +59,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-bottom: 5%;
         margin: 0 auto;
         --bs-gutter-x: 0rem;
         & p {
@@ -71,31 +67,40 @@
     }
 
     &__card {
-        margin-bottom: 5%;
-        width: 47%;
+        margin-bottom: 9%;
         box-shadow: 3px -3px 8px rgba(0, 0, 0, 0.338);
         &--md {
             display: none;
         }
+
+        @include media-bp-up(sm) {
+            width: 47%;
+            margin-bottom: 5%;
+        &--md {
+            display: flex;
+        }
+      }
+
         @include media-bp-up(md) {
                 width: 30%;
-            &--md {
-                display: flex;
-            }
           }
     }
 
     &__info--block {
         width: 90%;
-        margin: 0 auto 5%; 
+        margin: 0 auto 9%; 
         @include media-bp-up(lg) {
             width: 47%;
         }
     }
 
     &__info--box {
-        // display: flex;
-        width: 47%;
+        width: 100%;
+
+        @include media-bp-up(sm) {
+            width: 47%;
+        }
+
         @include media-bp-up(lg) {
             width: 100%;
         }
@@ -124,7 +129,11 @@
     display: flex;
     width: 90%;
     margin: 0 auto;
+    flex-direction: column;
     justify-content: space-between;
+    @include media-bp-up(sm) {
+        flex-direction:row;
+    }
     @include media-bp-up(lg) {
         width: 43%;
         flex-direction: column;
@@ -133,7 +142,6 @@
 }
 
 .box {
-    // width: 90%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -144,14 +152,12 @@
 }
 
 .container__regist {
-    position: relative;
-    top: 0;
-    left: 0;
+    background: url('../pages/country/thiland/img_page/banner-021.jpg')  no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     & .regist__info {
-        position: absolute;
-        top: 5%;
+        margin: 5% 0;
         display: flex;
         flex-direction: column;
         align-items: center;
