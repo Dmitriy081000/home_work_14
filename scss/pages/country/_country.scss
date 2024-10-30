@@ -1,11 +1,5 @@
 @use 'utils/mixin' as *;
 
-.container__item {
-    &>.row{
-        --bs-gutter-x: 0rem;
-    } 
-}
-
 .hero__item {
     background: url('../pages/country/thiland/img_page/111.jpg') no-repeat;
     background-size: cover;
@@ -175,35 +169,3 @@
         }
     }
 }
-
-.filter {
-    border-radius: 72px;
-    border: 1px solid #cbcaca;
-    background: #fff;
-    width: 90%;
-    margin-top: 1%;
-  
-    &__form {
-      display: flex;
-      justify-content: space-around;
-      padding: 5px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-  
-    &__input {
-      border: none;
-      font-size: 12px;
-      color: #9B9B9B;
-      font-weight: 600;
-      border-radius: 30px;
-      width: 70%;
-  
-      @include media-bp-up(md) {
-        margin-top: 0;
-        line-height: 36px;
-        font-size: 18px;
-        padding: 0 10px;
-      }
-    }
-  }
