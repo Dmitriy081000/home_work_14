@@ -1,3 +1,33 @@
+@use '../../utils/mixin' as *;
+
 .partners {
-  padding-top: 186px;
+  padding-top: 90px;
+  padding-bottom: 60px;
+  @include media-bp-up(lg){
+    padding-top: 186px;
+    padding-bottom: 90px;
+  }
+}
+
+.partners-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  @include media-bp-up(sm){
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @include media-bp-up(lg){
+    margin-top: 84px;
+    justify-content: space-between;
+  }
+  &__link {
+    display: inline-block;
+    object {
+      pointer-events: none;
+    }
+  }
 }

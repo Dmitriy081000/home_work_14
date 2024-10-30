@@ -333,7 +333,7 @@ h4 {
   border-radius: 10px;
   background: #fff;
   box-shadow: 0 8px 60px 0 rgba(0, 0, 0, 0.15);
-  padding: 44px 7% 70px;
+  padding: 20px 7% 40px;
 }
 
 @media (min-width: 992px) {
@@ -391,7 +391,120 @@ h4 {
 }
 
 .partners {
-  padding-top: 186px;
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 992px) {
+  .partners {
+    padding-top: 186px;
+    padding-bottom: 90px;
+  }
+}
+.partners-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (min-width: 576px) {
+  .partners-list {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 992px) {
+  .partners-list {
+    margin-top: 84px;
+    justify-content: space-between;
+  }
+}
+.partners-list__link {
+  display: inline-block;
+}
+
+.partners-list__link object {
+  pointer-events: none;
+}
+
+.users-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+  gap: 80px;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .users-cards {
+    flex-direction: row;
+    margin-top: 190px;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+}
+.user-card {
+  position: relative;
+  padding: 90px 52px 30px;
+  border-radius: 10px;
+  box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .user-card {
+    padding-bottom: 54px;
+  }
+}
+.user-card__avatar {
+  border-radius: 50%;
+  position: absolute;
+  top: -65px;
+  left: calc(50% - 65px);
+}
+
+.user-card__name {
+  color: #000;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.user-card__position {
+  color: #858585;
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.user-card__rate {
+  display: flex;
+  column-gap: 15px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .user-card__rate {
+    margin-top: 40px;
+  }
+}
+.user-card__text {
+  color: #858585;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .user-card__text {
+    margin-top: 18px;
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
