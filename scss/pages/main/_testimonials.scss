@@ -9,10 +9,13 @@
   gap: 80px;
   padding-bottom: 50px;
   @include media-bp-up(md){
-    flex-direction: row;
+
     margin-top: 190px;
     justify-content: center;
     padding-bottom: 100px;
+  }
+  @include media-bp-up(xl){
+    flex-direction: row;
   }
 }
 

@@ -11,11 +11,13 @@
 .about__cards{
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: 20px;
+  @include media-bp-up(md){
+    justify-content: space-between;
+  }
   @include media-bp-up(lg){
     flex-direction: row;
-    column-gap: 88px;
-    justify-content: center;
     position: relative;
     bottom: -132px;
   }
@@ -25,13 +27,11 @@
   border-radius: 10px;
   background: $light;
   box-shadow: 0 8px 60px 0 rgba(0, 0, 0, 0.15);
-  padding: 20px 7% 40px;
+  padding: 15px 5% 25px;
   @include media-bp-up(lg){
-    width: 30%;
-    padding: 44px 2% 70px;
+    padding: 44px 2% 40px;
   }
   @include media-bp-up(xl){
-      width: 25%;
       padding: 44px 2% 70px;
     }
 
