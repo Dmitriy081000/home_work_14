@@ -479,6 +479,11 @@ h4 {
     padding-bottom: 54px;
   }
 }
+@media (min-width: 1200px) {
+  .user-card {
+    min-height: 450px;
+  }
+}
 .user-card__avatar {
   border-radius: 50%;
   position: absolute;
