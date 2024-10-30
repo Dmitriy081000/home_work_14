@@ -395,7 +395,7 @@ h4 {
   --bs-gutter-x: 0rem;
 }
 
-.hero__1 {
+.hero__item {
   background: url("../pages/country/thiland/img_page/111.jpg") no-repeat;
   background-size: cover;
   padding: 254px 0 114px;
@@ -506,7 +506,6 @@ h4 {
 
 .container__trevel {
   width: 100%;
-  padding-bottom: 5%;
 }
 .container__trevel img {
   width: 100%;
@@ -569,21 +568,21 @@ h4 {
   }
 }
 
-.tour-filter {
+.filter {
   border-radius: 72px;
   border: 1px solid #cbcaca;
   background: #fff;
   width: 90%;
   margin-top: 1%;
 }
-.tour-filter__form {
+.filter__form {
   display: flex;
   justify-content: space-around;
   padding: 5px;
   flex-wrap: wrap;
   align-items: center;
 }
-.tour-filter__input {
+.filter__input {
   border: none;
   font-size: 12px;
   color: #9B9B9B;
@@ -592,12 +591,60 @@ h4 {
   width: 70%;
 }
 @media (min-width: 768px) {
-  .tour-filter__input {
+  .filter__input {
     margin-top: 0;
     line-height: 36px;
     font-size: 18px;
     padding: 0 10px;
   }
+}
+
+.container__live {
+  padding-right: 2%;
+  padding-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container__live--card {
+  display: flex;
+  margin-left: 2%;
+  flex-wrap: wrap;
+  margin-bottom: 3%;
+}
+@media (min-width: 576px) {
+  .container__live--card {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  .container__live--card {
+    width: 30%;
+  }
+}
+@media (min-width: 992px) {
+  .container__live--card {
+    width: 18%;
+  }
+}
+.container__live--card .live__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 3px -3px 8px rgba(0, 0, 0, 0.338);
+  overflow: hidden;
+}
+.container__live--card .live__card--md {
+  display: none;
+}
+.container__live--card .live__card .live__picture {
+  width: 100%;
+}
+.container__live--card .card:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 
 .footer {

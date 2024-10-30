@@ -6,7 +6,7 @@
     } 
 }
 
-.hero__1 {
+.hero__item {
     background: url('../pages/country/thiland/img_page/111.jpg') no-repeat;
     background-size: cover;
     padding: 254px 0 114px;
@@ -115,7 +115,6 @@
 
 .container__trevel {
     width: 100%;
-    padding-bottom: 5%;
     & img {
         width: 100%;
     }
@@ -171,7 +170,7 @@
     }
 }
 
-.tour-filter {
+.filter {
     border-radius: 72px;
     border: 1px solid #cbcaca;
     background: #fff;

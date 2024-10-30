@@ -1,0 +1,45 @@
+.container__live {
+    padding-right: 2%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    &--card {
+        display: flex;
+        margin-left: 2%;
+        flex-wrap: wrap;
+        margin-bottom: 3%;
+        @include media-bp-up(sm) {
+            width: 80%;
+        }
+        @include media-bp-up(md) {
+            width: 30%;
+          }
+        @include media-bp-up(lg) {
+            width: 18%;
+        }
+        
+        .live__card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            box-shadow: 3px -3px 8px rgba(0, 0, 0, 0.338);
+            overflow: hidden;
+            &--md {
+                display: none;
+            }   
+
+                .live__picture {
+                    width: 100%;
+                }
+        }  
+        
+        .card:hover {
+            transform: scale(1.1);
+            transition: all 0.5s;
+        }
+    }
+}

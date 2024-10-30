@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
           integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
-          <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" integrity="sha512-EIeyz8jygFLurz4RBJgtb2xBcR7uGWs6Gr6qygPowG13vYlYIaln5FyH+DN+da3jwPtb3Dq+pLA9yTR+uB3FYg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../../scss/main.css">
     <title>Document</title>
 </head>
@@ -46,32 +47,32 @@
     </div>  
 </header>
 <!-- 1111111111111111 -->
-<section class="hero__1">
+<section class="hero__item">
     <div class="container">
       <div class="row">
         <div class="col col-lg-6">
           <div class="parallax-item">
-            <h1 class="main-title">Make in
-              your journey.</h1>
-            <p class="subtitle">Explore the world with what you love beautiful natural beauty.</p>
-            <div class="tour-filter">
+            <h1 class="main-title">Виберіть
+                подорож.</h1>
+            <p class="subtitle">Досліджуйте світ за допомогою того, що вам подобається.</p>
+            <div class="filter">
               <form class="tour-filter__form" action="" method="get">
                 <select class="tour-filter__input">
-                  <option selected disabled>Location</option>
-                  <option>Ukraine</option>
-                  <option>Egypt</option>
-                  <option>USA</option>
+                  <option selected disabled>Країна</option>
+                  <option>Україна</option>
+                  <option>Єгипет</option>
+                  <option>США</option>
                 </select>
                 <input class="tour-filter__input" type="date" name="tourDate" id="tourDate">
                 <select class="tour-filter__input" name="tourPeople" id="tourPeople">
-                  <option selected disabled>People</option>
+                  <option selected disabled>Люди</option>
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
                   <option>4</option>
-                  <option>5 or more</option>
+                  <option>5 чи більше</option>
                 </select>
-                <button class="tour-filter__submit" type="submit">Explore now</button>
+                <button class="tour-filter__submit" type="submit">Вибрати</button>
               </form>
             </div>
           </div>
@@ -258,8 +259,8 @@
                             <div class="card">
                                 <div class="live__card">
                                     <div class="card-body">
-                                        <a class="live__picture-card" href="img_lightbox/picture1.jpg" data-lightbox="live-photo" data-title="Найпопулярніша гора Сігірія">
-                                            <img class="live__picture" src="img_lightbox/picture1.jpg" alt="mountain"></a>
+                                        <a class="live__picture-card" href="img_lightbox/picture1.1.jpg" data-lightbox="live-photo" data-title="Найпопулярніша гора Сігірія">
+                                            <img class="live__picture" src="img_lightbox/picture1.1.jpg" alt="mountain"></a>
                                     </div>
                                 </div>
                             </div>
@@ -268,8 +269,8 @@
                             <div class="card">
                                 <div class="live__card">
                                     <div class="card-body">
-                                        <a class="live__picture-card" href="img_lightbox/picture2.jpg" data-lightbox="live-photo" data-title="Неймовірні маршрути залізниць">
-                                            <img class="live__picture" src="img_lightbox/picture2.jpg" alt="train"></a>
+                                        <a class="live__picture-card" href="img_lightbox/picture1.2.jpg" data-lightbox="live-photo" data-title="Неймовірні маршрути залізниць">
+                                            <img class="live__picture" src="img_lightbox/picture1.2.jpg" alt="train"></a>
                                     </div>
                                 </div>
                             </div>
@@ -278,8 +279,8 @@
                             <div class="card">
                                 <div class="live__card">
                                     <div class="card-body">
-                                        <a class="live__picture-card" href="img_lightbox/picture3.jpg" data-lightbox="live-photo" data-title="Чудові міста для відпочинку">
-                                            <img class="live__picture" src="img_lightbox/picture3.jpg" alt="park"></a>
+                                        <a class="live__picture-card" href="img_lightbox/picture1.3.jpg" data-lightbox="live-photo" data-title="Чудові міста для відпочинку">
+                                            <img class="live__picture" src="img_lightbox/picture1.3.jpg" alt="park"></a>
                                     </div>
                                 </div>
                             </div>
@@ -288,8 +289,8 @@
                             <div class="card">
                                 <div class="live__card">
                                     <div class="card-body">
-                                        <a class="live__picture-card" href="img_lightbox/picture4.jpg" data-lightbox="live-photo" data-title="Мальовничі пляжі">
-                                            <img class="live__picture" src="img_lightbox/picture4.jpg" alt="ocean"></a>
+                                        <a class="live__picture-card" href="img_lightbox/picture1.4.jpg" data-lightbox="live-photo" data-title="Мальовничі пляжі">
+                                            <img class="live__picture" src="img_lightbox/picture1.4.jpg" alt="ocean"></a>
                                     </div>
                                 </div>
                             </div>
@@ -298,8 +299,8 @@
                             <div class="card">
                                 <div class="live__card">
                                     <div class="card-body">
-                                        <a class="live__picture-card" href="img_lightbox/picture5.jpg" data-lightbox="live-photo" data-title="Міста з висоти">
-                                            <img class="live__picture" src="img_lightbox/picture5.jpg" alt="road near the ocean"></a>
+                                        <a class="live__picture-card" href="img_lightbox/picture1.5.jpg" data-lightbox="live-photo" data-title="Міста з висоти">
+                                            <img class="live__picture" src="img_lightbox/picture1.5.jpg" alt="road near the ocean"></a>
                                     </div>
                                 </div>
                             </div>
@@ -362,7 +363,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js" integrity="sha512-LhqSCMz8SCcwpDZy4eFq3QkRXy+6LOeutHBHSyhiq1E7FS1V6d6Cl0LBTTZbSHR2M5Rc0eDW3WTBb3k8TUJQVA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="../../../assets/js/script.js"></script>
 </body>
 </html>
