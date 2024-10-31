@@ -91,17 +91,20 @@ h4 {
   .header__navList {
     display: flex;
     flex-direction: row;
-    column-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
   }
 }
 @media (min-width: 992px) {
   .header__navList {
-    column-gap: 40px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
 }
 @media (min-width: 1200px) {
   .header__navList {
-    column-gap: 67px;
+    -moz-column-gap: 67px;
+         column-gap: 67px;
   }
 }
 .header__navList.active {
@@ -128,6 +131,7 @@ h4 {
   row-gap: 2px;
   background-color: transparent;
   border: none;
+  width: -moz-fit-content;
   width: fit-content;
   align-self: center;
   transition: all 0.3s;
@@ -310,7 +314,8 @@ h4 {
 
 .products__slide-image {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 250px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -323,7 +328,6 @@ h4 {
 }
 .about {
   background: url("../assets/imgs/aboutBg.jpg") no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
   padding-top: 56px;
 }
@@ -509,7 +513,12 @@ h4 {
 
 .user-card__rate {
   display: flex;
+<<<<<<< HEAD
   column-gap: 15px;
+=======
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+>>>>>>> thailand
   margin-top: 20px;
 }
 
@@ -531,5 +540,301 @@ h4 {
     font-size: 18px;
   }
 }
+<<<<<<< HEAD
 
 /*# sourceMappingURL=main.css.map */
+=======
+.hero__item {
+  background: url("../pages/country/thiland/img_page/111.jpg") no-repeat;
+  background-size: cover;
+  padding: 254px 0 114px;
+  min-height: 100vh;
+}
+
+.country {
+  width: 100%;
+  padding-bottom: 5%;
+}
+.country .row {
+  --bs-gutter-x: 0;
+}
+.country__header {
+  width: 100%;
+  padding-bottom: 5%;
+}
+@media (min-width: 992px) {
+  .country__header {
+    height: 100vh;
+    padding: 0;
+  }
+}
+.country__popular {
+  width: 90%;
+  padding: 5% 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.country__btn {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: #212529;
+  border-color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-padding-y: 0.175rem;
+  --bs-border-radius: 20px;
+}
+.country__btn:hover {
+  background-color: #212529;
+  color: white;
+  border-color: black;
+}
+.country__hotel {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  --bs-gutter-x: 0rem;
+}
+.country__hotel p {
+  font-size: 12px;
+}
+.country__card {
+  margin-bottom: 9%;
+  box-shadow: 3px -3px 8px rgba(0, 0, 0, 0.338);
+}
+.country__card--md {
+  display: none;
+}
+@media (min-width: 576px) {
+  .country__card {
+    width: 47%;
+    margin-bottom: 5%;
+  }
+  .country__card--md {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .country__card {
+    width: 30%;
+  }
+}
+.country__info--block {
+  width: 90%;
+  margin: 0 auto 9%;
+}
+@media (min-width: 992px) {
+  .country__info--block {
+    width: 47%;
+  }
+}
+.country__info--box {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .country__info--box {
+    width: 47%;
+  }
+}
+@media (min-width: 992px) {
+  .country__info--box {
+    width: 100%;
+  }
+}
+
+.card-body {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.card-body .country__btn {
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+}
+
+.container__trevel {
+  width: 100%;
+}
+.container__trevel img {
+  width: 100%;
+}
+
+.box--minor {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 576px) {
+  .box--minor {
+    flex-direction: row;
+  }
+}
+@media (min-width: 992px) {
+  .box--minor {
+    width: 43%;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  .box {
+    width: 90%;
+    flex-direction: row;
+  }
+}
+
+.container__regist {
+  background: url("../pages/country/thiland/img_page/banner-021.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.container__regist .regist__info {
+  margin: 5% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+@media (min-width: 768px) {
+  .container__regist .regist__info {
+    margin: 5% 0;
+  }
+}
+.container__regist .regist__info p {
+  width: 82%;
+  font-size: 10px;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .container__regist .regist__info p {
+    font-size: 13px;
+  }
+}
+
+.container__live {
+  padding-right: 2%;
+  padding-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container__live--card {
+  display: flex;
+  margin-left: 2%;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+@media (min-width: 576px) {
+  .container__live--card {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  .container__live--card {
+    width: 30%;
+  }
+}
+@media (min-width: 992px) {
+  .container__live--card {
+    width: 18%;
+  }
+}
+.container__live--card .live__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 3px -3px 8px rgba(0, 0, 0, 0.338);
+  overflow: hidden;
+}
+.container__live--card .live__card--md {
+  display: none;
+}
+.container__live--card .live__card .live__picture {
+  width: 100%;
+}
+.container__live--card .card:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.footer {
+  background: rgba(18, 11, 11, 0.51);
+  padding: 3% 0 2%;
+  z-index: 3;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+.footer__logo {
+  max-width: 100%;
+}
+.footer__motto {
+  max-width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 8px;
+  padding-left: 5%;
+}
+.footer__nav {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .footer__nav {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .footer__nav {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__nav {
+    -moz-column-gap: 67px;
+         column-gap: 67px;
+  }
+}
+.footer__nav > ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.footer__navlist {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  align-self: center;
+}
+.footer__link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+.footer__navlist--item a {
+  font-size: 14px;
+}/*# sourceMappingURL=main.css.map */
+>>>>>>> thailand
