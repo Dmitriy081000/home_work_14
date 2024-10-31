@@ -1,5 +1,4 @@
 @use "../utils/mixin" as *;
-@use "../utils/variables" as *;
 
 .header {
   background: rgba(18, 11, 11, 0.51);
@@ -49,8 +48,11 @@
     align-self: center;
     transition: all .3s;
     &:hover {
-      color: $textAccent;
+      color: #000;
     }
+  }
+
+  &__nav {
   }
 
   &__btn {
