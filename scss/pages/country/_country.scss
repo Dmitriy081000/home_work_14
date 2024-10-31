@@ -3,13 +3,16 @@
 .hero__item {
     background: url('../pages/country/thiland/img_page/111.jpg') no-repeat;
     background-size: cover;
-    padding: 254px 0 114px;
+    padding: 200px 0 0;
     min-height: 100vh;
+    @include media-bp-up(sm){
+    padding: 254px 0 114px;
+  }
 }
 
 .country{
     width: 100%;
-    padding-bottom: 5%;
+    font-size: 0.9rem;
     & .row {
         --bs-gutter-x: 0;
     }
@@ -37,8 +40,8 @@
         background-color: #212529;
         border-color: black;
         font-family: 'Poppins', sans-serif;
-        font-size: 12px;
-        --bs-btn-padding-x: 0.5rem;
+        font-size: 1rem;
+        --bs-btn-padding-x: 0.7rem;
         --bs-btn-padding-y: 0.175rem;
         --bs-border-radius: 20px;
         &:hover {
@@ -56,13 +59,13 @@
         margin: 0 auto;
         --bs-gutter-x: 0rem;
         & p {
-            font-size: 12px;
+            font-size: 0.9rem;
         }
     }
 
     &__card {
         margin-bottom: 9%;
-        box-shadow: 3px -3px 8px rgba(0, 0, 0, 0.338);
+        box-shadow: $shadow;
         &--md {
             display: none;
         }
@@ -161,10 +164,10 @@
           }
         & p {
             width: 82%;
-            font-size: 10px;
+            font-size: 0.7rem;
             margin-bottom: 0;
             @include media-bp-up(md) {
-                font-size: 13px;
+                font-size: 1rem;
             }
         }
     }

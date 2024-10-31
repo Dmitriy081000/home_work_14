@@ -26,7 +26,7 @@
 .about__card {
   border-radius: 10px;
   background: $light;
-  box-shadow: 0 8px 60px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: $shadow;
   padding: 15px 5% 25px;
   @include media-bp-up(lg){
     padding: 44px 2% 40px;
