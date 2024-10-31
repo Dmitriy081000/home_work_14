@@ -91,17 +91,20 @@ h4 {
   .header__navList {
     display: flex;
     flex-direction: row;
-    column-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
   }
 }
 @media (min-width: 992px) {
   .header__navList {
-    column-gap: 40px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
 }
 @media (min-width: 1200px) {
   .header__navList {
-    column-gap: 67px;
+    -moz-column-gap: 67px;
+         column-gap: 67px;
   }
 }
 .header__navList.active {
@@ -128,6 +131,7 @@ h4 {
   row-gap: 2px;
   background-color: transparent;
   border: none;
+  width: -moz-fit-content;
   width: fit-content;
   align-self: center;
   transition: all 0.3s;
@@ -295,7 +299,8 @@ h4 {
 }
 .products__slide-image {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 250px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -308,7 +313,6 @@ h4 {
 
 .about {
   background: url("../assets/imgs/aboutBg.jpg") no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
   padding-top: 56px;
 }
@@ -482,7 +486,8 @@ h4 {
 }
 .user-card__rate {
   display: flex;
-  column-gap: 15px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
   margin-top: 20px;
 }
 @media (min-width: 768px) {
@@ -760,7 +765,8 @@ h4 {
 }
 @media (min-width: 768px) {
   .footer__nav {
-    column-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
     width: 100%;
     align-items: start;
     justify-content: end;
@@ -768,13 +774,15 @@ h4 {
 }
 @media (min-width: 992px) {
   .footer__nav {
-    column-gap: 40px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
     flex-direction: row;
   }
 }
 @media (min-width: 1200px) {
   .footer__nav {
-    column-gap: 67px;
+    -moz-column-gap: 67px;
+         column-gap: 67px;
   }
 }
 .footer__navlist {
@@ -799,12 +807,21 @@ h4 {
   flex-direction: row;
   align-items: center;
   flex-basis: 100%;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 @media (min-width: 768px) {
   .footer__navlist:last-child {
     flex-basis: 25%;
   }
+}
+.footer__navlist .contant__inform {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s;
+}
+.footer__navlist .contant__inform:hover {
+  color: #f55515;
 }
 .footer__link {
   text-decoration: none;
@@ -818,6 +835,4 @@ h4 {
 
 .footer__navlist--item a {
   font-size: 14px;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
