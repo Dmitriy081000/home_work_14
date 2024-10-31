@@ -1,13 +1,11 @@
 @use '../../utils/mixins' as *;
+@use '../../utils/variables' as *;
 
 .hero__item {
     background: url('../pages/country/thiland/img_page/111.jpg') no-repeat;
     background-size: cover;
     padding: 200px 0 0;
     min-height: 100vh;
-    @include media-bp-up(sm){
-    padding: 254px 0 114px;
-  }
 }
 
 .country{
@@ -16,15 +14,6 @@
     & .row {
         --bs-gutter-x: 0;
     }
-
-    &__header {
-        width: 100%;
-        padding-bottom: 5%;
-        @include media-bp-up(lg) {
-            height: 100vh;
-            padding: 0;
-        }
-      }
 
     &__popular {
         width: 90%;

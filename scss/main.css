@@ -171,11 +171,6 @@ h4 {
   padding: 200px 0 0;
   min-height: 100vh;
 }
-@media (min-width: 576px) {
-  .hero {
-    padding: 254px 0 114px;
-  }
-}
 
 .tour-filter__label {
   width: 100%;
@@ -514,11 +509,6 @@ h4 {
   padding: 200px 0 0;
   min-height: 100vh;
 }
-@media (min-width: 576px) {
-  .hero__item {
-    padding: 254px 0 114px;
-  }
-}
 
 .country {
   width: 100%;
@@ -526,16 +516,6 @@ h4 {
 }
 .country .row {
   --bs-gutter-x: 0;
-}
-.country__header {
-  width: 100%;
-  padding-bottom: 5%;
-}
-@media (min-width: 992px) {
-  .country__header {
-    height: 100vh;
-    padding: 0;
-  }
 }
 .country__popular {
   width: 90%;

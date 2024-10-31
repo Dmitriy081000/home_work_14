@@ -6,9 +6,6 @@
   background-size: cover;
   padding: 200px 0 0;
   min-height: 100vh;
-  @include media-bp-up(sm){
-    padding: 254px 0 114px;
-  }
 }
 
 .tour-filter {
