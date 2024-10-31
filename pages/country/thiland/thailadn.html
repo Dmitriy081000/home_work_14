@@ -22,63 +22,94 @@
         <div class="row align-items-center">
             <div class="col-7 col-md-3">
                 <a>
-                    <img class="header__logo" src="../../../assets/imgs/headerLogo.svg" alt="logo">
+                <img class="header__logo" src="../../../assets/imgs/headerLogo.svg" alt="logo">
                 </a>
             </div>
             <div class="col-3 d-md-flex justify-content-md-center">
-                <a href="../../../index.html" class="header__link">Home</a>
+                <a href="#" class="header__link">Головна</a>
             </div>
-                <button class="header__btn d-md-none">
-                    <span class="header__btn-line"></span>
-                    <span class="header__btn-line"></span>
-                    <span class="header__btn-line"></span>
-                </button>
+            <button class="header__btn d-md-none">
+                <span class="header__btn-line"></span>
+                <span class="header__btn-line"></span>
+                <span class="header__btn-line"></span>
+            </button>
             <div class="col-12 col-md-6">
                 <nav class="header__nav">
                     <ul class="header__navList justify-content-md-end">
-                        <li><a href="" class="header__link">Package</a></li>
-                        <li><a href="" class="header__link">Destination</a></li>
-                        <li><a href="" class="header__link">Blog</a></li>
-                        <li><a href="" class="header__link">Contact</a></li>
+                        <li><a href="#" class="header__link">Оформлення</a></li>
+                        <li class="dropdown ">
+                        <a class="header__link dropdown-toggle" role="button"
+                        id="dropdownHeaderButton" data-bs-toggle="dropdown"
+                        aria-expanded="true">
+                        Напрямок
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownHeaderButton">
+                            <a class="dropdown-item" href="#">Україна</a>
+                            <a class="dropdown-item" href="#">Таїланд</a>
+                            <a class="dropdown-item" href="#">Інше</a>
+                        </div>
+                        </li>
+                        <li><a href="#" class="header__link">Блог</a></li>
+                        <li><a href="#" class="header__link">Контакти</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-    </div>  
+    </div>
 </header>
 <section class="hero__item">
     <div class="container">
-        <div class="row">
-            <div class="col col-lg-6">
-                <div class="parallax-item">
-                    <h1 class="main-title">Виберіть
-                        подорож.</h1>
-                    <p class="subtitle">Досліджуйте світ за допомогою того, що вам подобається.</p>
-                    <div class="filter">
-                        <form class="tour-filter__form" action="" method="get">
-                            <select class="tour-filter__input">
-                                <option selected disabled>Країна</option>
-                                <option>Україна</option>
-                                <option>Єгипет</option>
-                                <option>США</option>
-                            </select>
-                            <input class="tour-filter__input" type="date" name="tourDate" id="tourDate">
-                            <select class="tour-filter__input" name="tourPeople" id="tourPeople">
-                                <option selected disabled>Люди</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5 чи більше</option>
-                            </select>
-                            <button class="tour-filter__submit" type="submit">Вибрати</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="parallax-item">
+            <h1 class="main-title">Створіть власну подорож.</h1>
+            <p class="subtitle">Досліджуйте світ за допомогою того, що вам подобається, та природної краси.</p>
+          </div>
         </div>
+        <div class="tour-filter col-12 col-lg-6">
+          <form class="tour-filter__form" action="" method="get">
+            <label class="tour-filter__label">
+              <select class="tour-filter__input">
+                <option selected disabled>Локація</option>
+                <option>Україна</option>
+                <option>Таїланд</option>
+                <option>США</option>
+              </select>
+            </label>
+            <label class="tour-filter__label">
+              Дата заселення
+              <input class="tour-filter__input" type="date" name="tourDate" id="tourDateIn">
+            </label>
+            <label class="tour-filter__label">
+              Дата виїзду
+              <input class="tour-filter__input" type="date" name="tourDate" id="tourDateOut">
+            </label>
+            <label class="tour-filter__label">
+              <select class="tour-filter__input" name="tourPeople" id="tourPeople">
+                <option selected disabled>Кількість осіб</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 або більше</option>
+              </select>
+            </label>
+            <label class="tour-filter__label">
+              <select class="tour-filter__input" name="tourPeople" id="tourHotelStars">
+                <option selected disabled>Рейтинг готелю</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </label>
+            <button class="tour-filter__submit" type="submit">Почати подорожувати</button>
+          </form>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
     <div class="country">
         <div class="container__hotel">
             <div class="row align-items-center">
@@ -305,7 +336,7 @@
             <div class="regist__info">
                 <h6>Підпишіться для спеціальної ціни</h6>
                 <p>Не хочеш щось пропустити? підпишіться прямо зараз і отримуйте спеціальну акцію та щомісячну розсилку</p>
-                <div class="tour-filter">
+                <div class="tour-filter col-10">
                     <form class="tour-filter__form" action method="get">
                         <input class="tour-filter__input" type="email" name="email" id="tourDate">
                         <button class="btn btn-primary country__btn" type="submit">Ввести email</button>
