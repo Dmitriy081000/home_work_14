@@ -1,0 +1,71 @@
+@use "../../utils/mixins" as *;
+@use '../../utils/variables' as *;
+
+.users-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+  gap: 80px;
+  padding-bottom: 50px;
+  @include media-bp-up(md){
+
+    margin-top: 190px;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+  @include media-bp-up(xl){
+    flex-direction: row;
+  }
+}
+
+.user-card {
+  position: relative;
+  padding: 90px 52px 30px;
+  border-radius: 10px;
+  box-shadow: $shadow;
+  @include media-bp-up(md){
+    padding-bottom: 54px;
+  }
+  @include media-bp-up(xl){
+    min-height: 450px;
+  }
+  &__avatar {
+    border-radius: 50%;
+    position: absolute;
+    top: calc(-65px);
+    left: calc(50% - 65px);
+  }
+  &__name {
+    color: $textDark;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  &__position {
+    color: $textSecondary;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__rate {
+    display: flex;
+    column-gap: 15px;
+    margin-top: 20px;
+    @include media-bp-up(md){
+      margin-top: 40px;
+    }
+  }
+  &__text {
+    color: $textSecondary;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    @include media-bp-up(md){
+      margin-top: 18px;
+      font-size: 18px;
+    }
+  }
+}

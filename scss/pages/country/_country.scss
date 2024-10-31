@@ -1,0 +1,179 @@
+@use '../../utils/mixins' as *;
+@use '../../utils/variables' as *;
+
+.hero__item {
+    background: url('../pages/country/thiland/img_page/111.jpg') no-repeat;
+    background-size: cover;
+    padding: 200px 0 0;
+    min-height: 100vh;
+}
+
+.hero__srilanka {
+    background: url('../pages/country/srilanka/img_page/main.jpg') no-repeat;
+    background-size: cover;
+    padding: 150px 0 0;
+    min-height: 100vh;
+  }
+
+.country{
+    width: 100%;
+    font-size: 0.9rem;
+    & .row {
+        --bs-gutter-x: 0;
+    }
+
+    &__header {
+        width: 100%;
+        padding-bottom: 5%;
+        @include media-bp-up(lg) {
+            height: 100vh;
+            padding: 0;
+        }
+      }
+
+    &__popular {
+        width: 90%;
+        padding: 5% 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        color: rgb(255, 255, 255, 0.80);
+        text-decoration: none;
+        background-color: #212529;
+        border-color: black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        --bs-btn-padding-x: 0.7rem;
+        --bs-btn-padding-y: 0.175rem;
+        --bs-border-radius: 20px;
+        &:hover {
+            background-color: #212529;
+            color: white;
+            border-color: black;
+        }
+    }
+
+    &__hotel {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        --bs-gutter-x: 0rem;
+        & p {
+            font-size: 0.9rem;
+        }
+    }
+
+    &__card {
+        margin-bottom: 9%;
+        box-shadow: $shadow;
+        &--md {
+            display: none;
+        }
+
+        @include media-bp-up(sm) {
+            width: 47%;
+            margin-bottom: 5%;
+        &--md {
+            display: flex;
+        }
+      }
+
+        @include media-bp-up(md) {
+                width: 30%;
+          }
+    }
+
+    &__info--block {
+        width: 90%;
+        margin: 0 auto 9%; 
+        @include media-bp-up(lg) {
+            width: 47%;
+        }
+    }
+
+    &__info--box {
+        width: 100%;
+
+        @include media-bp-up(sm) {
+            width: 47%;
+        }
+
+        @include media-bp-up(lg) {
+            width: 100%;
+        }
+    }
+}
+
+.card-body {
+    position: relative;
+    top: 0;
+    left: 0;
+    & .country__btn {
+        position: absolute;
+        bottom: -10px;
+        right: 10px;
+    }
+}
+
+.container__trevel {
+    width: 100%;
+    & img {
+        width: 100%;
+    }
+}
+
+.box--minor {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    @include media-bp-up(sm) {
+        flex-direction:row;
+    }
+    @include media-bp-up(lg) {
+        width: 43%;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    @include media-bp-up(lg) {
+        width: 90%;
+        flex-direction: row;
+    }
+}
+
+.container__regist {
+    background: url('../pages/country/thiland/img_page/banner-021.jpg')  no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    & .regist__info {
+        margin: 5% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(255, 255, 255, 0.80);
+        @include media-bp-up(md) {
+            margin: 5% 0;
+          }
+        & p {
+            width: 82%;
+            font-size: 0.7rem;
+            margin-bottom: 0;
+            @include media-bp-up(md) {
+                font-size: 1rem;
+            }
+        }
+    }
+}

@@ -1,13 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-}
-
-@import 'mixin';
-@import 'variables';
-@import 'header';
-@import 'country';
-@import 'lightbox';
-@import 'footer';
+@use "base/base";
+@use 'utils/utils';
+@use "components/components";
+@use "layout/header";
+@use "pages/main/index";
+@use "pages/country/country";
+@use "components/lightbox";
+@use "layout/footer" ;

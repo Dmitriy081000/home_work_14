@@ -1,0 +1,72 @@
+@use '../../utils/mixins' as *;
+@use '../../utils/variables' as *;
+
+.hero {
+  background: url('../assets/imgs/heroBg.jpg') no-repeat;
+  background-size: cover;
+  padding: 200px 0 0;
+  min-height: 100vh;
+  @include media-bp-up(sm){
+    padding: 254px 0 114px;
+  }
+}
+
+.tour-filter {
+  &__label {
+    width: 100%;
+  }
+
+  &__form {
+    box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.30);
+    margin-top: 30px;
+    display: flex;
+    padding: 10px;
+    row-gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background: $light;
+    @include media-bp-up(lg){
+      margin-top: 0;
+    }
+  }
+
+  &__input {
+    border: none;
+    font-size: 0.875rem;
+    border-radius: 10px;
+    color: #9B9B9B;
+    font-weight: 600;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.1);
+    @include media-bp-up(lg) {
+      font-size: 1.125rem;
+      line-height: 36px;
+    }
+  }
+
+  &__submit {
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 600;
+    background-color: #000;
+    line-height: 18px;
+    border-radius: 28px;
+    padding: 6px 12px;
+    justify-self: center;
+    margin-top: 20px;
+    transition: color .3s;
+
+    &:hover {
+      color: $textAccent;
+    }
+
+    @include media-bp-up(md) {
+      margin-top: 0;
+      line-height: 36px;
+      font-size: 1.125rem;
+      padding: 12px 24px;
+    }
+  }
+}

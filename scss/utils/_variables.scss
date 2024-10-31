@@ -1,0 +1,21 @@
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+);
+
+//font colors
+$textDark: #000;
+$textSecondary: #858585;
+$textLight: #fff;
+$textAccent: #f55515;
+
+//layout colors
+$light: rgba(255, 255, 255, 0.9);
+$dark: #000;
+
+//shadow card
+$shadow: 0 8px 60px 0 rgba(0, 0, 0, 0.15);
