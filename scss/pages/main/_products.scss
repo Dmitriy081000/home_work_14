@@ -1,4 +1,5 @@
-@import '../../utils/mixin';
+@use '../../utils/mixins' as *;
+
 .products {
   padding: 90px 0 194px;
   &__slider-nav{

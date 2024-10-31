@@ -332,13 +332,14 @@
             </div>
         </div>
         <div class="container__regist">
-            <!-- <img src="img_page/banner-021.jpg" alt="" style="width: 100%;"> -->
             <div class="regist__info">
-                <h6>Підпишіться для спеціальної ціни</h6>
-                <p>Не хочеш щось пропустити? підпишіться прямо зараз і отримуйте спеціальну акцію та щомісячну розсилку</p>
+                <h2 class="secondary-title secondary-title--light">Підпишіться для спеціальної ціни</h2>
+                <p class="subtitle">Не хочеш щось пропустити? підпишіться прямо зараз і отримуйте спеціальну акцію та щомісячну розсилку</p>
                 <div class="tour-filter col-10">
                     <form class="tour-filter__form" action method="get">
-                        <input class="tour-filter__input" type="email" name="email" id="tourDate">
+                        <label class="tour-filter__label">
+                            <input class="tour-filter__input" type="email" name="email" id="tourDate">
+                        </label>
                         <button class="btn btn-primary country__btn" type="submit">Ввести email</button>
                     </form>
                 </div>
@@ -347,34 +348,40 @@
     </div>
 <footer class="footer">
     <div class="container">
-        <div class="row row__footer">
-            <div class="col-7 col-md-4 footer__img">
+        <div class="row">
+            <div class="col-7 col-md-3 footer__img">
                 <a>
-                    <img class="footer__logo" src="../../../assets/imgs/headerLogo.svg" alt="logo">
-                    <p class="footer__motto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra condimentum.</p>
-                </a>    
+                    <img class="footer__logo" src="assets/imgs/headerLogo.svg" alt="logo">
+                    <p class="footer__motto">Створіть власну подорож.</p>
+                </a>
             </div>
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-9">
                 <nav class="footer__nav">
-                    <ul class="col-2 footer__navlist footer__navlist--item justify-content-md-end">
+                    <ul class="footer__navlist justify-content-md-end">
                         <li>Quick Link:</li>
-                        <li><a class="footer__link" href="../../../index.html">Home</a></li>
+                        <li><a class="footer__link" href="#">Home</a></li>
                         <li><a class="footer__link" href="">About Us</a></li>
                         <li><a class="footer__link" href="">Tours</a></li>
                         <li><a class="footer__link" href="">Contact</a></li>
                     </ul>
-                    <ul class="col-4 footer__navlist justify-content-md-end">
+                    <ul class="footer__navlist justify-content-md-end">
                         <li>Contact Information:</li>
-                        <li><i class='bx bx-location-plus' ></i> 732 Despard St, Atlanta</li>
-                        <li><i class='bx bx-phone-call'></i> +97 888 8888</li>
-                        <li><i class='bx bx-phone-call'></i> +97 999 9999</li>
-                        <li><i class='bx bxs-envelope' ></i> info@traveller.com</li>
+                        <li>732 Despard St, Atlanta</li>
+                        <li>+97 888 8888</li>
+                        <li>+97 999 9999</li>
+                        <li>info@traveller.com</li>
                     </ul>
-                    <ul class="col-2 footer__navlist justify-content-md-end">
+                    <ul class="footer__navlist justify-content-md-end">
                         <li>Follow Us:</li>
-                        <li><a class="footer__link" href=""><i class='bx bx-x' undefined ></i></a></li>
-                        <li><a class="footer__link" href=""><i class='bx bxl-facebook-square' ></i></a></li>
-                        <li><a class="footer__link" href=""><i class='bx bxl-instagram-alt'></i></a></li>
+                        <li><a class="footer__link" href="">
+                            <i class='bx bxl-instagram' style='color:#ffffff'  ></i>
+                        </a></li>
+                        <li><a class="footer__link" href="">
+                            <i class='bx bxl-facebook-square' style='color:#ffffff' ></i>
+                        </a></li>
+                        <li><a class="footer__link" href="">
+                            <i class='bx bxl-twitter' style='color:#ffffff' ></i>
+                        </a></li>
                     </ul>
                 </nav>
             </div>

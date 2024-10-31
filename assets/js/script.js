@@ -23,7 +23,7 @@ window.addEventListener('scroll', () => {
 
 //parallax for main paige
 window.onload = function () {
-  const parallax = document.querySelector('.hero__item')
+  const parallax = document.querySelector('.hero__item') || document.querySelector('.hero')
 
   if (parallax) {
     const parallaxItem = document.querySelector('.parallax-item')

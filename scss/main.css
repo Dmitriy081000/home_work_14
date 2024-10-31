@@ -23,7 +23,6 @@ h4 {
   text-align: center;
   margin-bottom: 40px;
 }
-
 @media (min-width: 1200px) {
   .main-title {
     text-align: left;
@@ -31,6 +30,7 @@ h4 {
     font-size: 5.625rem;
   }
 }
+
 .secondary-title {
   color: #000;
   text-align: center;
@@ -39,7 +39,6 @@ h4 {
   font-weight: 600;
   margin-bottom: 15px;
 }
-
 @media (min-width: 992px) {
   .secondary-title {
     font-size: 3.75rem;
@@ -47,6 +46,7 @@ h4 {
     margin-bottom: 38px;
   }
 }
+
 .secondary-title.secondary-title--light {
   color: #fff;
 }
@@ -59,12 +59,12 @@ h4 {
   line-height: 18px;
   text-align: center;
 }
-
 @media (min-width: 768px) {
   .subtitle {
     line-height: 36px;
   }
 }
+
 .subtitle--dark {
   color: #000;
 }
@@ -91,20 +91,17 @@ h4 {
   .header__navList {
     display: flex;
     flex-direction: row;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
   }
 }
 @media (min-width: 992px) {
   .header__navList {
-    -moz-column-gap: 40px;
-         column-gap: 40px;
+    column-gap: 40px;
   }
 }
 @media (min-width: 1200px) {
   .header__navList {
-    -moz-column-gap: 67px;
-         column-gap: 67px;
+    column-gap: 67px;
   }
 }
 .header__navList.active {
@@ -131,7 +128,6 @@ h4 {
   row-gap: 2px;
   background-color: transparent;
   border: none;
-  width: -moz-fit-content;
   width: fit-content;
   align-self: center;
   transition: all 0.3s;
@@ -171,16 +167,15 @@ h4 {
   padding: 200px 0 0;
   min-height: 100vh;
 }
-
 @media (min-width: 576px) {
   .hero {
     padding: 254px 0 114px;
   }
 }
+
 .tour-filter__label {
   width: 100%;
 }
-
 .tour-filter__form {
   box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.3);
   margin-top: 30px;
@@ -192,7 +187,6 @@ h4 {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.9);
 }
-
 @media (min-width: 992px) {
   .tour-filter__form {
     margin-top: 0;
@@ -208,7 +202,6 @@ h4 {
   width: 100%;
   box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.1);
 }
-
 @media (min-width: 992px) {
   .tour-filter__input {
     font-size: 1.125rem;
@@ -227,11 +220,9 @@ h4 {
   margin-top: 20px;
   transition: color 0.3s;
 }
-
 .tour-filter__submit:hover {
   color: #f55515;
 }
-
 @media (min-width: 768px) {
   .tour-filter__submit {
     margin-top: 0;
@@ -240,16 +231,15 @@ h4 {
     padding: 12px 24px;
   }
 }
+
 .products {
   padding: 90px 0 194px;
 }
-
 .products__slider-nav {
   display: flex;
   justify-content: space-between;
   margin-bottom: 45px;
 }
-
 .products__slider-prev, .products__slider-next {
   padding: 4px 10px;
   font-size: 1.25rem;
@@ -259,7 +249,6 @@ h4 {
   cursor: pointer;
   transition: 0.3s;
 }
-
 @media (min-width: 768px) {
   .products__slider-prev, .products__slider-next {
     padding: 8px 20px;
@@ -269,20 +258,16 @@ h4 {
 .products__slider-prev:hover, .products__slider-next:hover {
   transform: scale(0.95);
 }
-
 .products__slider-prev:active, .products__slider-next:active {
   transform: scale(0.9);
 }
-
 .products__slide-text {
   display: none;
 }
-
 .products__slide {
   border: 1px solid #000;
   border-radius: 10px;
 }
-
 .products__slide.swiper-slide-active .products__slide-text {
   display: block;
   padding: 34px 14px 26px;
@@ -291,43 +276,39 @@ h4 {
   background: #FFF;
   box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.1);
 }
-
 .products__slide.swiper-slide-active .products__slide-title {
   color: #000;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: normal;
 }
-
 .products__slide.swiper-slide-active .products__slide-descr {
   color: #555;
   font-size: 0.875rem;
   font-weight: 500;
   line-height: normal;
 }
-
 .products__slide-link {
   background: #fff;
   width: 100%;
   display: block;
 }
-
 .products__slide-image {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 250px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
 @media (min-width: 768px) {
   .products__slide-image {
     height: 362px;
   }
 }
+
 .about {
   background: url("../assets/imgs/aboutBg.jpg") no-repeat;
+  -webkit-background-size: cover;
   background-size: cover;
   padding-top: 56px;
 }
@@ -338,7 +319,6 @@ h4 {
   align-items: center;
   row-gap: 20px;
 }
-
 @media (min-width: 768px) {
   .about__cards {
     justify-content: space-between;
@@ -351,13 +331,13 @@ h4 {
     bottom: -132px;
   }
 }
+
 .about__card {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 8px 60px 0 rgba(0, 0, 0, 0.15);
   padding: 15px 5% 25px;
 }
-
 @media (min-width: 992px) {
   .about__card {
     padding: 44px 2% 40px;
@@ -374,18 +354,15 @@ h4 {
   border-radius: 10px;
   margin-bottom: 33px;
 }
-
 .about__card-icon i {
   font-size: 5.625rem;
 }
-
 .about__card-title {
   color: #000;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: normal;
 }
-
 .about__card-text {
   color: #858585;
   font-size: 1.125rem;
@@ -393,7 +370,6 @@ h4 {
   margin-bottom: 38px;
   line-height: normal;
 }
-
 .about__card-link {
   color: #000;
   font-size: 18px;
@@ -405,7 +381,6 @@ h4 {
   text-decoration: none;
   transition: color 0.3s;
 }
-
 .about__card-link:hover {
   color: #f55515;
 }
@@ -414,13 +389,13 @@ h4 {
   padding-top: 90px;
   padding-bottom: 60px;
 }
-
 @media (min-width: 992px) {
   .partners {
     padding-top: 186px;
     padding-bottom: 90px;
   }
 }
+
 .partners-list {
   margin-top: 40px;
   display: flex;
@@ -428,7 +403,6 @@ h4 {
   align-items: center;
   gap: 20px;
 }
-
 @media (min-width: 576px) {
   .partners-list {
     justify-content: center;
@@ -445,7 +419,6 @@ h4 {
 .partners-list__link {
   display: inline-block;
 }
-
 .partners-list__link object {
   pointer-events: none;
 }
@@ -458,7 +431,6 @@ h4 {
   gap: 80px;
   padding-bottom: 50px;
 }
-
 @media (min-width: 768px) {
   .users-cards {
     margin-top: 190px;
@@ -471,13 +443,13 @@ h4 {
     flex-direction: row;
   }
 }
+
 .user-card {
   position: relative;
   padding: 90px 52px 30px;
   border-radius: 10px;
   box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.1);
 }
-
 @media (min-width: 768px) {
   .user-card {
     padding-bottom: 54px;
@@ -494,7 +466,6 @@ h4 {
   top: -65px;
   left: calc(50% - 65px);
 }
-
 .user-card__name {
   color: #000;
   text-align: center;
@@ -502,7 +473,6 @@ h4 {
   font-weight: 600;
   margin-bottom: 10px;
 }
-
 .user-card__position {
   color: #858585;
   text-align: center;
@@ -510,18 +480,11 @@ h4 {
   font-size: 18px;
   font-weight: 500;
 }
-
 .user-card__rate {
   display: flex;
-<<<<<<< HEAD
   column-gap: 15px;
-=======
-  -moz-column-gap: 15px;
-       column-gap: 15px;
->>>>>>> thailand
   margin-top: 20px;
 }
-
 @media (min-width: 768px) {
   .user-card__rate {
     margin-top: 40px;
@@ -533,17 +496,13 @@ h4 {
   font-weight: 500;
   margin-top: 10px;
 }
-
 @media (min-width: 768px) {
   .user-card__text {
     margin-top: 18px;
     font-size: 18px;
   }
 }
-<<<<<<< HEAD
 
-/*# sourceMappingURL=main.css.map */
-=======
 .hero__item {
   background: url("../pages/country/thiland/img_page/111.jpg") no-repeat;
   background-size: cover;
@@ -781,6 +740,11 @@ h4 {
   left: 0;
   bottom: 0;
 }
+@media (min-width: 768px) {
+  .footer .row {
+    justify-content: space-between;
+  }
+}
 .footer__logo {
   max-width: 100%;
 }
@@ -792,49 +756,68 @@ h4 {
 }
 .footer__nav {
   display: flex;
+  flex-wrap: wrap;
 }
 @media (min-width: 768px) {
   .footer__nav {
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
     width: 100%;
+    align-items: start;
+    justify-content: end;
   }
 }
 @media (min-width: 992px) {
   .footer__nav {
-    -moz-column-gap: 40px;
-         column-gap: 40px;
+    column-gap: 40px;
+    flex-direction: row;
   }
 }
 @media (min-width: 1200px) {
   .footer__nav {
-    -moz-column-gap: 67px;
-         column-gap: 67px;
+    column-gap: 67px;
   }
 }
-.footer__nav > ul {
+.footer__navlist {
+  font-family: "Poppins", sans-serif;
   padding: 0;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   font-size: 14px;
-}
-.footer__navlist {
-  color: rgba(255, 255, 255, 0.8);
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
   font-weight: 600;
+  flex-basis: 50%;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: normal;
   line-height: normal;
   text-decoration: none;
-  align-self: center;
+}
+@media (min-width: 768px) {
+  .footer__navlist {
+    flex-basis: 25%;
+  }
+}
+.footer__navlist:last-child {
+  flex-direction: row;
+  align-items: center;
+  flex-basis: 100%;
+  column-gap: 30px;
+}
+@media (min-width: 768px) {
+  .footer__navlist:last-child {
+    flex-basis: 25%;
+  }
 }
 .footer__link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
   font-size: 24px;
+  transition: all 0.3s;
+}
+.footer__link:hover {
+  color: #f55515;
 }
 
 .footer__navlist--item a {
   font-size: 14px;
-}/*# sourceMappingURL=main.css.map */
->>>>>>> thailand
+}
+
+/*# sourceMappingURL=main.css.map */

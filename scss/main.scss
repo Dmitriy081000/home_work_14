@@ -1,8 +1,8 @@
 @use "base/base";
-@import 'utils/utils';
-@import "components/components";
-@import "layout/header";
-@import "pages/main/index";
-@import "pages/country/country";
-@import "lightbox";
-@import "layout/footer"
+@use 'utils/utils';
+@use "components/components";
+@use "layout/header";
+@use "pages/main/index";
+@use "pages/country/country";
+@use "components/lightbox";
+@use "layout/footer" ;
