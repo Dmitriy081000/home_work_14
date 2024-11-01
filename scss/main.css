@@ -14,6 +14,10 @@ h4 {
   margin-bottom: 12px;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .main-title {
   color: #fff;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -446,24 +450,19 @@ h4 {
 }
 
 .country {
-  width: 100%;
   font-size: 0.9rem;
 }
 .country .row {
   --bs-gutter-x: 0;
 }
 .country__popular {
-  width: 90%;
   padding: 5% 0;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
 }
 .country__btn {
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
   text-decoration: none;
-  background-color: #212529;
-  border-color: black;
+  background-color: #000;
+  border-color: #000;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   --bs-btn-padding-x: 0.7rem;
@@ -471,126 +470,40 @@ h4 {
   --bs-border-radius: 20px;
 }
 .country__btn:hover {
-  background-color: #212529;
-  color: white;
-  border-color: black;
+  background-color: #000 !important;
+  color: #f55515;
+  border-color: #000;
 }
 .country__hotel {
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 auto;
   --bs-gutter-x: 0rem;
 }
 .country__hotel p {
   font-size: 0.9rem;
 }
 .country__card {
+  font-size: 0.9rem;
   margin-bottom: 9%;
   box-shadow: 0 8px 60px 0 rgba(0, 0, 0, 0.15);
 }
-.country__card--md {
-  display: none;
-}
 @media (min-width: 576px) {
   .country__card {
-    width: 47%;
     margin-bottom: 5%;
-  }
-  .country__card--md {
-    display: flex;
-  }
-}
-@media (min-width: 768px) {
-  .country__card {
-    width: 30%;
   }
 }
 .country__info--block {
-  width: 90%;
-  margin: 0 auto 9%;
-}
-@media (min-width: 992px) {
-  .country__info--block {
-    width: 47%;
-  }
-}
-.country__info--box {
-  width: 100%;
-}
-@media (min-width: 576px) {
-  .country__info--box {
-    width: 47%;
-  }
-}
-@media (min-width: 992px) {
-  .country__info--box {
-    width: 100%;
-  }
-}
-
-.card-body {
-  position: relative;
-  top: 0;
-  left: 0;
+  margin-bottom: 9%;
 }
 .card-body .country__btn {
-  position: absolute;
   bottom: -10px;
   right: 10px;
-}
-
-.container__trevel {
-  width: 100%;
-}
-.container__trevel img {
-  width: 100%;
-}
-
-.box--minor {
-  display: flex;
-  width: 90%;
-  margin: 0 auto;
-  flex-direction: column;
-  justify-content: space-between;
-}
-@media (min-width: 576px) {
-  .box--minor {
-    flex-direction: row;
-  }
-}
-@media (min-width: 992px) {
-  .box--minor {
-    width: 43%;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-.box {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-@media (min-width: 992px) {
-  .box {
-    width: 90%;
-    flex-direction: row;
-  }
 }
 
 .container__regist {
   background: url("../pages/country/thiland/img_page/banner-021.jpg") no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
 }
 .container__regist .regist__info {
   margin: 5% 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   color: rgba(255, 255, 255, 0.8);
 }
 @media (min-width: 768px) {
