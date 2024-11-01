@@ -1,0 +1,105 @@
+@use '../../utils/mixins' as *;
+@use '../../utils/variables' as *;
+
+.hero__item {
+  background: url('../pages/country/thiland/img_page/111.jpg') no-repeat;
+  background-size: cover;
+  padding: 200px 0 0;
+  min-height: 100vh;
+}
+
+.country {
+  font-size: 0.9rem;
+
+  & .row {
+    --bs-gutter-x: 0;
+  }
+
+  &__popular {
+    padding: 5% 0;
+  }
+
+  &__btn {
+    color: $textLight;
+    text-decoration: none;
+    background-color: $textDark;
+    border-color: $textDark;
+    font-family: $sansFont;
+    font-size: 1rem;
+    --bs-btn-padding-x: 0.7rem;
+    --bs-btn-padding-y: 0.175rem;
+    --bs-border-radius: 20px;
+
+    &:hover {
+      background-color: $textDark !important;
+      color: $textAccent;
+      border-color: $textDark;
+    }
+  }
+
+  &__hotel {
+    --bs-gutter-x: 0rem;
+
+    & p {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__card {
+    font-size: 0.9rem;
+    margin-bottom: 9%;
+    box-shadow: $shadow;
+    @include media-bp-up(sm) {
+      margin-bottom: 5%;
+    }
+  }
+
+  &__info--block {
+    margin-bottom: 9%;
+  }
+
+  &__info--box {
+  }
+}
+
+.card-body {
+
+  .country__btn {
+    bottom: -10px;
+    right: 10px;
+  }
+}
+
+.container__trevel {
+
+  & img {
+  }
+}
+
+.box--minor {
+}
+
+.box {
+}
+
+.container__regist {
+  background: url('../pages/country/thiland/img_page/banner-021.jpg') no-repeat;
+  background-size: cover;
+
+  .regist__info {
+    margin: 5% 0;
+    color: rgb(255, 255, 255, 0.80);
+    @include media-bp-up(md) {
+      margin: 5% 0;
+    }
+
+    p {
+      width: 82%;
+      font-size: 0.7rem;
+      margin-bottom: 0;
+      @include media-bp-up(md) {
+        font-size: 1rem;
+      }
+    }
+  }
+}

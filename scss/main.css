@@ -442,6 +442,86 @@ body {
   }
 }
 
+.hero__item {
+  background: url("../pages/country/thiland/img_page/111.jpg") no-repeat;
+  background-size: cover;
+  padding: 200px 0 0;
+  min-height: 100vh;
+}
+
+.country {
+  font-size: 0.9rem;
+}
+.country .row {
+  --bs-gutter-x: 0;
+}
+.country__popular {
+  padding: 5% 0;
+}
+.country__btn {
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  border-color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  --bs-btn-padding-x: 0.7rem;
+  --bs-btn-padding-y: 0.175rem;
+  --bs-border-radius: 20px;
+}
+.country__btn:hover {
+  background-color: #000 !important;
+  color: #f55515;
+  border-color: #000;
+}
+.country__hotel {
+  --bs-gutter-x: 0rem;
+}
+.country__hotel p {
+  font-size: 0.9rem;
+}
+.country__card {
+  font-size: 0.9rem;
+  margin-bottom: 9%;
+  box-shadow: 0 8px 60px 0 rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 576px) {
+  .country__card {
+    margin-bottom: 5%;
+  }
+}
+.country__info--block {
+  margin-bottom: 9%;
+}
+.card-body .country__btn {
+  bottom: -10px;
+  right: 10px;
+}
+
+.container__regist {
+  background: url("../pages/country/thiland/img_page/banner-021.jpg") no-repeat;
+  background-size: cover;
+}
+.container__regist .regist__info {
+  margin: 5% 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+@media (min-width: 768px) {
+  .container__regist .regist__info {
+    margin: 5% 0;
+  }
+}
+.container__regist .regist__info p {
+  width: 82%;
+  font-size: 0.7rem;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .container__regist .regist__info p {
+    font-size: 1rem;
+  }
+}
+
 .container__live {
   padding-right: 2%;
   padding-bottom: 5%;
