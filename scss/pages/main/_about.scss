@@ -8,16 +8,9 @@
   padding-top: 56px;
 }
 
-.about__cards{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.about__cards {
   row-gap: 20px;
-  @include media-bp-up(md){
-    justify-content: space-between;
-  }
-  @include media-bp-up(lg){
-    flex-direction: row;
+  @include media-bp-up(lg) {
     position: relative;
     bottom: -132px;
   }
@@ -28,18 +21,18 @@
   background: $light;
   box-shadow: $shadow;
   padding: 15px 5% 25px;
-  @include media-bp-up(lg){
+  @include media-bp-up(lg) {
     padding: 44px 2% 40px;
   }
-  @include media-bp-up(xl){
-      padding: 44px 2% 70px;
-    }
+  @include media-bp-up(xl) {
+    padding: 44px 2% 70px;
+  }
 
   &-icon {
     background: $dark;
-    display: inline-block;
     border-radius: 10px;
     margin-bottom: 33px;
+
     i {
       font-size: 5.625rem;
     }
@@ -65,8 +58,6 @@
     font-size: 18px;
     font-weight: 500;
     line-height: normal;
-    display: flex;
-    align-items: center;
     gap: 0.3125rem;
     text-decoration: none;
     transition: color .3s;
