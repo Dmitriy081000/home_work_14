@@ -95,20 +95,17 @@ body {
   .header__navList {
     display: flex;
     flex-direction: row;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
   }
 }
 @media (min-width: 992px) {
   .header__navList {
-    -moz-column-gap: 40px;
-         column-gap: 40px;
+    column-gap: 40px;
   }
 }
 @media (min-width: 1200px) {
   .header__navList {
-    -moz-column-gap: 67px;
-         column-gap: 67px;
+    column-gap: 67px;
   }
 }
 .header__navList.active {
@@ -135,7 +132,6 @@ body {
   row-gap: 2px;
   background-color: transparent;
   border: none;
-  width: -moz-fit-content;
   width: fit-content;
   align-self: center;
   transition: all 0.3s;
@@ -279,8 +275,7 @@ body {
   background: #fff;
 }
 .products__slide-image {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 250px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -293,6 +288,7 @@ body {
 
 .about {
   background: url("../assets/imgs/aboutBg.jpg") no-repeat;
+  -webkit-background-size: cover;
   background-size: cover;
   padding-top: 56px;
 }
@@ -425,8 +421,7 @@ body {
   font-weight: 500;
 }
 .user-card__rate {
-  -moz-column-gap: 15px;
-       column-gap: 15px;
+  column-gap: 15px;
   margin-top: 20px;
 }
 @media (min-width: 768px) {
@@ -463,9 +458,6 @@ body {
 .country {
   font-size: 0.9rem;
 }
-.country .row {
-  --bs-gutter-x: 0;
-}
 .country__popular {
   padding: 5% 0;
 }
@@ -495,6 +487,7 @@ body {
   font-size: 0.9rem;
   margin-bottom: 9%;
   box-shadow: 0 8px 60px 0 rgba(0, 0, 0, 0.15);
+  height: 430px;
 }
 @media (min-width: 576px) {
   .country__card {
@@ -609,8 +602,7 @@ body {
 }
 @media (min-width: 768px) {
   .footer__nav {
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
     width: 100%;
     align-items: start;
     justify-content: end;
@@ -618,15 +610,13 @@ body {
 }
 @media (min-width: 992px) {
   .footer__nav {
-    -moz-column-gap: 40px;
-         column-gap: 40px;
+    column-gap: 40px;
     flex-direction: row;
   }
 }
 @media (min-width: 1200px) {
   .footer__nav {
-    -moz-column-gap: 67px;
-         column-gap: 67px;
+    column-gap: 67px;
   }
 }
 .footer__navlist {
@@ -651,8 +641,7 @@ body {
   flex-direction: row;
   align-items: center;
   flex-basis: 100%;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
+  column-gap: 15px;
 }
 @media (min-width: 768px) {
   .footer__navlist:last-child {
@@ -678,4 +667,6 @@ body {
 }
 .footer__link i {
   font-size: 1.3rem;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

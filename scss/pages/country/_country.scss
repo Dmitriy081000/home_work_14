@@ -19,7 +19,7 @@
   font-size: 0.9rem;
 
   & .row {
-    --bs-gutter-x: 0;
+    //--bs-gutter-x: 0;
   }
 
   &__popular {
@@ -56,6 +56,7 @@
     font-size: 0.9rem;
     margin-bottom: 9%;
     box-shadow: $shadow;
+    height: 430px;
     @include media-bp-up(sm) {
       margin-bottom: 5%;
     }
