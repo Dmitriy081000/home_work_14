@@ -1,11 +1,18 @@
 @use '../../utils/mixins' as *;
 @use '../../utils/variables' as *;
 
+.hero__srilanka,
 .hero__item {
   background: url('../pages/country/thiland/img_page/111.jpg') no-repeat;
   background-size: cover;
   padding: 200px 0 0;
   min-height: 100vh;
+}
+
+.hero__srilanka {
+  background: url('../pages/country/srilanka/img_page/main.jpg') no-repeat;
+  background-size: cover;
+
 }
 
 .country {
