@@ -1,377 +1,396 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="scss/main.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+          integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="scss/main.css">
+    <title>Document</title>
 </head>
 <body>
 
 <header class="header">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-7 col-md-3">
-        <a>
-          <img class="header__logo" src="assets/imgs/headerLogo.svg" alt="logo">
-        </a>
-      </div>
-      <div class="col-3 d-md-flex justify-content-md-center">
-        <a href="#" class="header__link">Головна</a>
-      </div>
-      <button class="header__btn d-md-none">
-        <span class="header__btn-line"></span>
-        <span class="header__btn-line"></span>
-        <span class="header__btn-line"></span>
-      </button>
-      <div class="col-12 col-md-6">
-        <nav class="header__nav">
-          <ul class="header__navList justify-content-md-end">
-            <li><a href="#" class="header__link">Оформлення</a></li>
-            <li class="dropdown ">
-              <a class="header__link dropdown-toggle" role="button"
-                 id="dropdownHeaderButton" data-bs-toggle="dropdown"
-                 aria-expanded="true">
-                Напрямок
-              </a>
-              <div class="dropdown-menu" aria-labelledby="dropdownHeaderButton">
-                <a class="dropdown-item" href="pages/country/srilanka/sri_lanka.html">Шрі-Ланка</a>
-                <a class="dropdown-item" href="pages/country/thiland/thailand.html">Таїланд</a>
-                <a class="dropdown-item" href="#">Інше</a>
-              </div>
-            </li>
-            <li><a href="#" class="header__link">Блог</a></li>
-            <li><a href="#contant__inform" class="header__link">Контакти</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-7 col-md-3">
+                <a>
+                    <img class="header__logo" src="assets/imgs/headerLogo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="col-3 d-md-flex justify-content-md-center">
+                <a href="#" class="header__link">Головна</a>
+            </div>
+            <button class="header__btn d-md-none">
+                <span class="header__btn-line"></span>
+                <span class="header__btn-line"></span>
+                <span class="header__btn-line"></span>
+            </button>
+            <div class="col-12 col-md-6">
+                <nav class="header__nav">
+                    <ul class="header__navList justify-content-md-end">
+                        <li><a href="#" class="header__link">Оформлення</a></li>
+                        <li class="dropdown ">
+                            <a class="header__link dropdown-toggle" role="button"
+                               id="dropdownHeaderButton" data-bs-toggle="dropdown"
+                               aria-expanded="true">
+                                Напрямок
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownHeaderButton">
+                                <a class="dropdown-item" href="pages/country/srilanka/sri_lanka.html">Шрі-Ланка</a>
+                                <a class="dropdown-item" href="pages/country/thiland/thailand.html">Таїланд</a>
+                                <a class="dropdown-item" href="#">Інше</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="header__link">Блог</a></li>
+                        <li><a href="#contant__inform" class="header__link">Контакти</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
-  </div>
 </header>
 
 <main>
 
-  <section class="hero">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-6">
-          <div class="parallax-item">
-            <h1 class="main-title">Створіть власну подорож.</h1>
-            <p class="subtitle">Досліджуйте світ за допомогою того, що вам подобається, та природної краси.</p>
-          </div>
-        </div>
-        <div class="tour-filter col-12 col-lg-6">
-          <form class="tour-filter__form d-flex flex-column align-items-center mt-lg-0" action="http://fom.in.ua/echo">
-            <label class="tour-filter__label w-100">
-              <select class="tour-filter__input w-100 border-0">
-                <option selected disabled>Локація</option>
-                <option>Україна</option>
-                <option>Таїланд</option>
-                <option>Шрі-Ланка́</option>
-              </select>
-            </label>
-            <label class="tour-filter__label w-100">
-              Дата заселення
-              <input class="tour-filter__input w-100 border-0" type="date" name="tourDate" id="tourDateIn">
-            </label>
-            <label class="tour-filter__label w-100">
-              Дата виїзду
-              <input class="tour-filter__input w-100 border-0" type="date" name="tourDate" id="tourDateOut">
-            </label>
-            <label class="tour-filter__label w-100">
-              <select class="tour-filter__input w-100 border-0" name="tourPeople" id="tourPeople">
-                <option selected disabled>Кількість осіб</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5 або більше</option>
-              </select>
-            </label>
-            <label class="tour-filter__label w-100">
-              <select class="tour-filter__input w-100 border-0" name="tourPeople" id="tourHotelStars">
-                <option selected disabled>Рейтинг готелю</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </label>
-            <button class="tour-filter__submit mt-lg-0" type="submit">Почати подорожувати</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="products">
-    <div class="container">
-      <div class="row">
-        <h2 class="secondary-title">Досліджуйте нові світи з екзотичними природними пейзажами</h2>
-        <p class="subtitle subtitle--dark">Досліджуйте світ за допомогою того, що вам подобається, красивої природної
-          краси.</p>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="swiper products__slider">
-            <div class="products__slider-nav d-flex justify-content-between">
-              <div class="products__slider-prev">
-                <i class='bx bx-chevron-left'></i>
-              </div>
-              <div class="products__slider-next">
-                <i class='bx bx-chevron-right'></i>
-              </div>
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="parallax-item">
+                        <h1 class="main-title">Створіть власну подорож.</h1>
+                        <p class="subtitle">Досліджуйте світ за допомогою того, що вам подобається, та природної
+                            краси.</p>
+                    </div>
+                </div>
+                <div class="tour-filter col-12 col-lg-6">
+                    <form class="tour-filter__form d-flex flex-column align-items-center mt-lg-0"
+                          action="http://fom.in.ua/echo">
+                        <label class="tour-filter__label w-100">
+                            <select class="tour-filter__input w-100 border-0">
+                                <option selected disabled>Локація</option>
+                                <option>Україна</option>
+                                <option>Таїланд</option>
+                                <option>Шрі-Ланка́</option>
+                            </select>
+                        </label>
+                        <label class="tour-filter__label w-100">
+                            Дата заселення
+                            <input class="tour-filter__input w-100 border-0" type="date" name="tourDate"
+                                   id="tourDateIn">
+                        </label>
+                        <label class="tour-filter__label w-100">
+                            Дата виїзду
+                            <input class="tour-filter__input w-100 border-0" type="date" name="tourDate"
+                                   id="tourDateOut">
+                        </label>
+                        <label class="tour-filter__label w-100">
+                            <select class="tour-filter__input w-100 border-0" name="tourPeople" id="tourPeople">
+                                <option selected disabled>Кількість осіб</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5 або більше</option>
+                            </select>
+                        </label>
+                        <label class="tour-filter__label w-100">
+                            <select class="tour-filter__input w-100 border-0" name="tourPeople" id="tourHotelStars">
+                                <option selected disabled>Рейтинг готелю</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </label>
+                        <button class="tour-filter__submit mt-lg-0" type="submit">Почати подорожувати</button>
+                    </form>
+                </div>
             </div>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide products__slide">
-                <a href="#" class="products__slide-link w-100 d-block">
-                  <img class="products__slide-image w-100" src="assets/imgs/country1.jpg" alt="">
-                </a>
-                <div class="products__slide-text">
-                  <p class="products__slide-title">Балі, Індонезія.</p>
-                  <p class="products__slide-descr">Балі є прекрасним туристичним місцем, яке відвідують багато людей
-                    мандрівників.</p>
-                </div>
-              </div>
-              <div class="swiper-slide products__slide">
-                <a href="#" class="products__slide-link w-100 d-block">
-                  <img class="products__slide-image w-100" src="assets/imgs/country2.jpg" alt="">
-                </a>
-                <div class="products__slide-text">
-                  <p class="products__slide-title">Балі, Індонезія.</p>
-                  <p class="products__slide-descr">Балі є прекрасним туристичним місцем, яке відвідують багато людей
-                    мандрівників.</p>
-                </div>
-              </div>
-              <div class="swiper-slide products__slide">
-                <a href="#" class="products__slide-link w-100 d-block">
-                  <img class="products__slide-image w-100" src="assets/imgs/country3.jpg" alt="">
-                </a>
-                <div class="products__slide-text">
-                  <p class="products__slide-title">Балі, Індонезія.</p>
-                  <p class="products__slide-descr">Балі є прекрасним туристичним місцем, яке відвідують багато людей
-                    мандрівників.</p>
-                </div>
-              </div>
-              <div class="swiper-slide products__slide">
-                <a href="#" class="products__slide-link w-100 d-block">
-                  <img class="products__slide-image w-100" src="assets/imgs/country2.jpg" alt="">
-                </a>
-                <div class="products__slide-text">
-                  <p class="products__slide-title">Балі, Індонезія.</p>
-                  <p class="products__slide-descr">Балі є прекрасним туристичним місцем, яке відвідують багато людей
-                    мандрівників.</p>
-                </div>
-              </div>
-            </div>
-            <div class="products__slider-pagination"></div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="about">
-    <div class="container">
-      <div class="row">
-        <h2 class="secondary-title secondary-title--light">Чому саме ми</h2>
-        <p class="subtitle">нашим послугам довіряють мандрівники всього світу.</p>
-        <div
-            class="about__cards d-flex flex-column justify-content-center align-items-center justify-content-md-between flex-lg-row">
-          <div class="about__card col-12 col-md-8 col-lg-3">
+    <section class="products">
+        <div class="container">
+            <div class="row">
+                <h2 class="secondary-title">Досліджуйте нові світи з екзотичними природними пейзажами</h2>
+                <p class="subtitle subtitle--dark">Досліджуйте світ за допомогою того, що вам подобається, красивої
+                    природної
+                    краси.</p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper products__slider">
+                        <div class="products__slider-nav d-flex justify-content-between">
+                            <div class="products__slider-prev">
+                                <i class='bx bx-chevron-left'></i>
+                            </div>
+                            <div class="products__slider-next">
+                                <i class='bx bx-chevron-right'></i>
+                            </div>
+                        </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide products__slide">
+                                <a href="#" class="products__slide-link w-100 d-block">
+                                    <img class="products__slide-image w-100" src="assets/imgs/country1.jpg" alt="">
+                                </a>
+                                <div class="products__slide-text">
+                                    <p class="products__slide-title">Балі, Індонезія.</p>
+                                    <p class="products__slide-descr">Балі є прекрасним туристичним місцем, яке
+                                        відвідують багато людей
+                                        мандрівників.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide products__slide">
+                                <a href="#" class="products__slide-link w-100 d-block">
+                                    <img class="products__slide-image w-100" src="assets/imgs/country2.jpg" alt="">
+                                </a>
+                                <div class="products__slide-text">
+                                    <p class="products__slide-title">Балі, Індонезія.</p>
+                                    <p class="products__slide-descr">Балі є прекрасним туристичним місцем, яке
+                                        відвідують багато людей
+                                        мандрівників.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide products__slide">
+                                <a href="#" class="products__slide-link w-100 d-block">
+                                    <img class="products__slide-image w-100" src="assets/imgs/country3.jpg" alt="">
+                                </a>
+                                <div class="products__slide-text">
+                                    <p class="products__slide-title">Балі, Індонезія.</p>
+                                    <p class="products__slide-descr">Балі є прекрасним туристичним місцем, яке
+                                        відвідують багато людей
+                                        мандрівників.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide products__slide">
+                                <a href="#" class="products__slide-link w-100 d-block">
+                                    <img class="products__slide-image w-100" src="assets/imgs/country2.jpg" alt="">
+                                </a>
+                                <div class="products__slide-text">
+                                    <p class="products__slide-title">Балі, Індонезія.</p>
+                                    <p class="products__slide-descr">Балі є прекрасним туристичним місцем, яке
+                                        відвідують багато людей
+                                        мандрівників.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__slider-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <h2 class="secondary-title secondary-title--light">Чому саме ми</h2>
+                <p class="subtitle">нашим послугам довіряють мандрівники всього світу.</p>
+                <div
+                        class="about__cards d-flex flex-column justify-content-center align-items-center justify-content-md-between flex-lg-row">
+                    <div class="about__card col-12 col-md-8 col-lg-3">
           <span class="about__card-icon d-inline-block">
             <i class='bx bxs-universal-access' style="color:#fff"></i>
           </span>
-            <h4 class="about__card-title">Найкращий сервіс</h4>
-            <p class="about__card-text">Наш сервіс надійний, зручний і якісний</p>
-            <a href="#" class="about__card-link d-flex align-items-center">Дізнатись більше <i
-                class='bx bxs-right-arrow-alt'></i></a>
-          </div>
-          <div class="about__card col-12 col-md-8 col-lg-3">
+                        <h4 class="about__card-title">Найкращий сервіс</h4>
+                        <p class="about__card-text">Наш сервіс надійний, зручний і якісний</p>
+                        <a href="#" class="about__card-link d-flex align-items-center">Дізнатись більше <i
+                                class='bx bxs-right-arrow-alt'></i></a>
+                    </div>
+                    <div class="about__card col-12 col-md-8 col-lg-3">
           <span class="about__card-icon d-inline-block">
             <i class='bx bx-money-withdraw' style="color:#fff"></i>
           </span>
-            <h4 class="about__card-title">Гарантовані ціни</h4>
-            <p class="about__card-text">Наші ціни є стабільними та не змінюються щодня</p>
-            <a href="#" class="about__card-link d-flex align-items-center">Дізнатись більше <i
-                class='bx bxs-right-arrow-alt'></i></a>
-          </div>
-          <div class="about__card col-12 col-md-8 col-lg-3">
+                        <h4 class="about__card-title">Гарантовані ціни</h4>
+                        <p class="about__card-text">Наші ціни є стабільними та не змінюються щодня</p>
+                        <a href="#" class="about__card-link d-flex align-items-center">Дізнатись більше <i
+                                class='bx bxs-right-arrow-alt'></i></a>
+                    </div>
+                    <div class="about__card col-12 col-md-8 col-lg-3">
           <span class="about__card-icon d-inline-block">
             <i class='bx bxs-party  inline-block' style="color:#fff"></i>
           </span>
-            <h4 class="about__card-title">Підібрані готелі</h4>
-            <p class="about__card-text">Готелі підібрані саме під Ваш тип відпочинку</p>
-            <a href="#" class="about__card-link d-flex align-items-center">Дізнатись більше <i
-                class='bx bxs-right-arrow-alt'></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="partners">
-    <div class="container">
-      <div class="row">
-        <h2 class="secondary-title">Наші партнери</h2>
-        <p class="subtitle subtitle--dark">Ми співпрацюємо лише з найкращими партнерами, що роками підтверджують свою
-          надійність</p>
-        <ul class="partners-list d-flex flex-column align-items-center justify-content-sm-center flex-sm-row flex-sm-wrap justify-content-lg-between">
-          <li>
-            <a href="#" target="_blank" class="partners-list__link d-inline-block">
-              <object data="assets/imgs/partners/katana.svg" type="image/svg+xml"></object>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank" class="partners-list__link d-inline-block">
-              <object data="assets/imgs/partners/travava.svg" type="image/svg+xml"></object>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank" class="partners-list__link d-inline-block">
-              <object data="assets/imgs/partners/bigui.svg" type="image/svg+xml"></object>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank" class="partners-list__link">
-              <object data="assets/imgs/partners/booking.com.svg" type="image/svg+xml"></object>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank" class="partners-list__link">
-              <object data="assets/imgs/partners/jakmaen.svg" type="image/svg+xml"></object>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="row">
-        <h2 class="secondary-title">Що кажуть наші клієнти</h2>
-        <p class="subtitle subtitle--dark">Ми цінуємо наших клієнтів. Понад 80% клієнтів звертаються за нашими послугами
-          повторно.</p>
-        <div class="users-cards d-flex flex-column align-items-center justify-content-md-center flex-xl-row">
-          <div class="user-card position-relative col-12 col-lg-8 col-xl-3">
-            <img src="assets/imgs/users/user1.jpg" alt="user photo" class="user-card__avatar position-absolute">
-            <h5 class="user-card__name text-center">Сара Абрамівна</h5>
-            <span class="user-card__position text-center d-block">Курортниця</span>
-            <div class="user-card__rate d-flex">
-              <i class='bx bxs-star' style='color:#ffc542'></i>
-              <i class='bx bxs-star' style='color:#ffc542'></i>
-              <i class='bx bxs-star' style='color:#ffc542'></i>
-              <i class='bx bxs-star' style='color:#ffc542'></i>
-              <i class='bx bxs-star' style='color:#ffc542'></i>
+                        <h4 class="about__card-title">Підібрані готелі</h4>
+                        <p class="about__card-text">Готелі підібрані саме під Ваш тип відпочинку</p>
+                        <a href="#" class="about__card-link d-flex align-items-center">Дізнатись більше <i
+                                class='bx bxs-right-arrow-alt'></i></a>
+                    </div>
+                </div>
             </div>
-            <p class="user-card__text">Такі гарні ціни, що навіть додому привезла трохи грошей.</p>
-          </div>
-          <div class="user-card position-relative col-12 col-lg-8 col-xl-3">
-            <img src="assets/imgs/users/user2.jpg" alt="user photo" class="user-card__avatar position-absolute">
-            <h5 class="user-card__name text-center">Петро Хардкодів</h5>
-            <span class="user-card__position text-center d-block">Фрілансер</span>
-            <div class="user-card__rate d-flex">
-              <i class='bx bxs-star' style='color:#ffc542'></i>
-              <i class='bx bxs-star' style='color:#ffc542'></i>
-              <i class='bx bxs-star' style='color:#ffc542'></i>
-              <i class='bx bxs-star' style='color:#ffc542'></i>
-              <i class='bx bxs-star' style='color:#ffc542'></i>
-            </div>
-            <p class="user-card__text">Всю відпустку робив правки в коді, на море не ходив. Мені все сподобалось.</p>
-          </div>
-          <div class="user-card position-relative col-12 col-lg-8 col-xl-3">
-            <img src="assets/imgs/users/user3.jpg" alt="user photo" class="user-card__avatar position-absolute">
-            <h5 class="user-card__name text-center">Іван Сонний</h5>
-            <span class="user-card__position text-center d-block">Робочий</span>
-            <div class="user-card__rate d-flex">
-              <i class='bx bxs-star' style='color:#ffc542'></i>
-              <i class='bx bxs-star' style='color:#ffc542'></i>
-              <i class='bx bxs-star' style='color:#ffc542'></i>
-              <i class='bx bxs-star' style='color:#ffc542'></i>
-              <i class='bx bxs-star' style='color:#ffc542'></i>
-            </div>
-            <p class="user-card__text">Відпочинок просто супер! І виспався і порозважався. Правда їздив не я, а дружина
-              з дітьми.</p>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="container__regist d-flex justify-content-center">
-      <div class="regist__info d-flex flex-column align-items-center">
-        <h2 class="secondary-title secondary-title--light">Підпишіться для спеціальної ціни</h2>
-        <p class="subtitle">Не хочеш щось пропустити? підпишіться прямо зараз і отримуйте спеціальну акцію та щомісячну
-          розсилку</p>
-        <div class="tour-filter col-10">
-          <form class="tour-filter__form d-flex flex-column align-items-center" action="http://fom.in.ua/echo">
-            <label class="tour-filter__label w-100">
-              <input class="tour-filter__input w-100 border-0" type="email" name="email" id="tourDate">
-            </label>
-            <button class="btn btn-primary country__btn" type="submit">Ввести email</button>
-          </form>
+    <section class="partners">
+        <div class="container">
+            <div class="row">
+                <h2 class="secondary-title">Наші партнери</h2>
+                <p class="subtitle subtitle--dark">Ми співпрацюємо лише з найкращими партнерами, що роками підтверджують
+                    свою
+                    надійність</p>
+                <ul class="partners-list d-flex flex-column align-items-center justify-content-sm-center flex-sm-row flex-sm-wrap justify-content-lg-between">
+                    <li>
+                        <a href="#" target="_blank" class="partners-list__link d-inline-block">
+                            <object data="assets/imgs/partners/katana.svg" type="image/svg+xml"></object>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="partners-list__link d-inline-block">
+                            <object data="assets/imgs/partners/travava.svg" type="image/svg+xml"></object>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="partners-list__link d-inline-block">
+                            <object data="assets/imgs/partners/bigui.svg" type="image/svg+xml"></object>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="partners-list__link">
+                            <object data="assets/imgs/partners/booking.com.svg" type="image/svg+xml"></object>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="partners-list__link">
+                            <object data="assets/imgs/partners/jakmaen.svg" type="image/svg+xml"></object>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <h2 class="secondary-title">Що кажуть наші клієнти</h2>
+                <p class="subtitle subtitle--dark">Ми цінуємо наших клієнтів. Понад 80% клієнтів звертаються за нашими
+                    послугами
+                    повторно.</p>
+                <div class="users-cards d-flex flex-column align-items-center justify-content-md-center flex-xl-row">
+                    <div class="user-card position-relative col-12 col-lg-8 col-xl-3">
+                        <img src="assets/imgs/users/user1.jpg" alt="user photo"
+                             class="user-card__avatar position-absolute">
+                        <h5 class="user-card__name text-center">Сара Абрамівна</h5>
+                        <span class="user-card__position text-center d-block">Курортниця</span>
+                        <div class="user-card__rate d-flex">
+                            <i class='bx bxs-star' style='color:#ffc542'></i>
+                            <i class='bx bxs-star' style='color:#ffc542'></i>
+                            <i class='bx bxs-star' style='color:#ffc542'></i>
+                            <i class='bx bxs-star' style='color:#ffc542'></i>
+                            <i class='bx bxs-star' style='color:#ffc542'></i>
+                        </div>
+                        <p class="user-card__text">Такі гарні ціни, що навіть додому привезла трохи грошей.</p>
+                    </div>
+                    <div class="user-card position-relative col-12 col-lg-8 col-xl-3">
+                        <img src="assets/imgs/users/user2.jpg" alt="user photo"
+                             class="user-card__avatar position-absolute">
+                        <h5 class="user-card__name text-center">Петро Хардкодів</h5>
+                        <span class="user-card__position text-center d-block">Фрілансер</span>
+                        <div class="user-card__rate d-flex">
+                            <i class='bx bxs-star' style='color:#ffc542'></i>
+                            <i class='bx bxs-star' style='color:#ffc542'></i>
+                            <i class='bx bxs-star' style='color:#ffc542'></i>
+                            <i class='bx bxs-star' style='color:#ffc542'></i>
+                            <i class='bx bxs-star' style='color:#ffc542'></i>
+                        </div>
+                        <p class="user-card__text">Всю відпустку робив правки в коді, на море не ходив. Мені все
+                            сподобалось.</p>
+                    </div>
+                    <div class="user-card position-relative col-12 col-lg-8 col-xl-3">
+                        <img src="assets/imgs/users/user3.jpg" alt="user photo"
+                             class="user-card__avatar position-absolute">
+                        <h5 class="user-card__name text-center">Іван Сонний</h5>
+                        <span class="user-card__position text-center d-block">Робочий</span>
+                        <div class="user-card__rate d-flex">
+                            <i class='bx bxs-star' style='color:#ffc542'></i>
+                            <i class='bx bxs-star' style='color:#ffc542'></i>
+                            <i class='bx bxs-star' style='color:#ffc542'></i>
+                            <i class='bx bxs-star' style='color:#ffc542'></i>
+                            <i class='bx bxs-star' style='color:#ffc542'></i>
+                        </div>
+                        <p class="user-card__text">Відпочинок просто супер! І виспався і порозважався. Правда їздив не
+                            я, а дружина
+                            з дітьми.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container__regist d-flex justify-content-center">
+            <div class="regist__info d-flex flex-column align-items-center">
+                <h2 class="secondary-title secondary-title--light">Підпишіться для спеціальної ціни</h2>
+                <p class="subtitle">Не хочеш щось пропустити? підпишіться прямо зараз і отримуйте спеціальну акцію та
+                    щомісячну
+                    розсилку</p>
+                <div class="tour-filter col-10">
+                    <form class="tour-filter__form d-flex flex-column align-items-center"
+                          action="http://fom.in.ua/echo">
+                        <label class="tour-filter__label w-100">
+                            <input class="tour-filter__input w-100 border-0" type="email" name="email" id="tourDate">
+                        </label>
+                        <button class="btn btn-primary country__btn" type="submit">Ввести email</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-7 col-md-3 footer__img">
-        <a>
-          <img class="footer__logo" src="assets/imgs/headerLogo.svg" alt="logo">
-          <p class="footer__motto">Створіть власну подорож.</p>
-        </a>
-      </div>
-      <div class="col-12 col-md-9">
-        <nav class="footer__nav">
-          <ul class="footer__navlist justify-content-md-end">
-            <li>Швидке посилання:</li>
-            <li><a class="footer__link" href="#">Головна</a></li>
-            <li><a class="footer__link" href="#">Про нас</a></li>
-            <li><a class="footer__link" href="#">Екскурсії</a></li>
-            <li><a class="footer__link" href="#">Контакти</a></li>
-          </ul>
-          <ul class="footer__navlist justify-content-md-end">
-            <li>Контактна інформація:</li>
-            <li><a class="contant__inform" name="contant__inform" href="https://maps.app.goo.gl/A2gifYb7YdEGbcGw7">вулиця
-              Басейна 1</a></li>
-            <li>380 50 000 22 22</li>
-            <li>380 93 000 22 22</li>
-            <li>info@traveller.com</li>
-          </ul>
-          <ul class="footer__navlist justify-content-md-end">
-            <li>Слідкуйте за нами:</li>
-            <li><a class="footer__link" href="">
-              <i class='bx bxl-instagram' style='color:#ffffff'></i>
-            </a></li>
-            <li><a class="footer__link" href="">
-              <i class='bx bxl-facebook-square' style='color:#ffffff'></i>
-            </a></li>
-            <li><a class="footer__link" href="">
-              <i class='bx bxl-twitter' style='color:#ffffff'></i>
-            </a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-7 col-md-3 footer__img">
+                <a>
+                    <img class="footer__logo" src="assets/imgs/headerLogo.svg" alt="logo">
+                    <p class="footer__motto">Створіть власну подорож.</p>
+                </a>
+            </div>
+            <div class="col-12 col-md-9">
+                <nav class="footer__nav">
+                    <ul class="footer__navlist justify-content-md-end">
+                        <li>Швидке посилання:</li>
+                        <li><a class="footer__link" href="#">Головна</a></li>
+                        <li><a class="footer__link" href="#">Про нас</a></li>
+                        <li><a class="footer__link" href="#">Екскурсії</a></li>
+                        <li><a class="footer__link" href="#">Контакти</a></li>
+                    </ul>
+                    <ul class="footer__navlist justify-content-md-end">
+                        <li>Контактна інформація:</li>
+                        <li><a class="contant__inform" name="contant__inform"
+                               href="https://maps.app.goo.gl/A2gifYb7YdEGbcGw7">вулиця
+                            Басейна 1</a></li>
+                        <li>380 50 000 22 22</li>
+                        <li>380 93 000 22 22</li>
+                        <li>info@traveller.com</li>
+                    </ul>
+                    <ul class="footer__navlist justify-content-md-end">
+                        <li>Слідкуйте за нами:</li>
+                        <li><a class="footer__link" href="">
+                            <i class='bx bxl-instagram' style='color:#ffffff'></i>
+                        </a></li>
+                        <li><a class="footer__link" href="">
+                            <i class='bx bxl-facebook-square' style='color:#ffffff'></i>
+                        </a></li>
+                        <li><a class="footer__link" href="">
+                            <i class='bx bxl-twitter' style='color:#ffffff'></i>
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
-  </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
